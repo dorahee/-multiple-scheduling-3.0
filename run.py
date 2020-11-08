@@ -14,9 +14,9 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 # num_households_range = [20]
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [10, 20]
-penalty_weight_range = [5, 500]
-num_tasks_dependent_range = [1, 3]
+num_households_range = [5000, 5000, 5000, 5000, 5000]
+penalty_weight_range = [1]
+num_tasks_dependent_range = [0, 1, 3, 5]
 num_full_flex_tasks = 5
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
@@ -66,7 +66,7 @@ def main():
                             new_iteration.new(algorithm=alg, num_households=num_households,
                                               max_demand_multiplier=maxium_demand_multiplier,
                                               num_tasks_dependent=num_tasks_dependent,
-                                              full_flex_task_min=num_full_flex_tasks, full_flex_task_max=0,
+                                              full_flex_task_min=num_full_flex_tasks, full_flex_task_max=8,
                                               semi_flex_task_min=num_semi_flex_tasks, semi_flex_task_max=0,
                                               fixed_task_min=num_fixed_tasks, fixed_task_max=0,
                                               inconvenience_cost_weight=penalty_weight,
