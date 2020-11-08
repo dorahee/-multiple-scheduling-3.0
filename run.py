@@ -35,6 +35,7 @@ def main():
         for penalty_weight in penalty_weight_range:
 
             for num_tasks_dependent in num_tasks_dependent_range:
+                new_data = True
 
                 print("----------------------------------------")
                 print(f"{num_households} households, "
