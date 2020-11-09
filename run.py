@@ -13,7 +13,7 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 
 num_repeat = 1
-num_households_range = [50, 500, 5000, 10000]
+num_households_range = [5000]
 penalty_weight_range = [10]
 num_tasks_dependent_range = [3]
 num_full_flex_tasks = 10
