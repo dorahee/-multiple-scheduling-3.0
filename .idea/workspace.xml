@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fa0ef66-11ba-463e-b9de-2e16f4819ef8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/data copy/Household-cp-pre.mzn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data copy/aggregator.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data copy/community.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data copy/demands_list.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data copy/pricing_table.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data copy/pricing_table_0.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data copy/probability.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data copy/sample_demand_profile.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+            <state relative-caret-position="355">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -134,7 +142,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6712000" />
+    <option name="totallyTimeSpent" value="7114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1951" height="1364" extended-state="0" />
@@ -171,7 +179,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/run.py</url>
-          <line>82</line>
+          <line>80</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -197,8 +205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        <state relative-caret-position="355">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
