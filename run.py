@@ -12,11 +12,12 @@ algorithms[m_ogsa][m_before_fw] = m_ogsa
 algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 
-num_repeat = 3
-num_households_range = [50, 100, 500, 1000, 1500, 2000, 4000, 6000, 8000, 10000]
-penalty_weight_range = [10]
+num_repeat = 5
+# num_households_range = [50, 100, 500, 1000, 1500, 2000, 4000, 6000, 8000, 10000]
+num_households_range = [5000]
+penalty_weight_range = [0]
 num_tasks_dependent_range = [3]
-num_full_flex_tasks = 10
+num_full_flex_tasks = 5
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
 num_samples = 5
