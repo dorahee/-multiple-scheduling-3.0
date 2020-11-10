@@ -17,7 +17,8 @@ num_repeat = 5
 num_households_range = [5000]
 penalty_weight_range = [0]
 num_tasks_dependent_range = [3]
-num_full_flex_tasks = 5
+num_full_flex_tasks_min = 5
+num_full_flex_tasks_max = 8
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
 num_samples = 5
@@ -39,7 +40,7 @@ def main():
                     print("----------------------------------------")
                     print(f"{num_households} households, "
                           f"{num_tasks_dependent} dependent tasks, "
-                          f"{num_full_flex_tasks} fully flexible tasks, "
+                          f"at least {num_full_flex_tasks_min} fully flexible tasks, "
                           f"{num_semi_flex_tasks} semi-flexible tasks, "
                           f"{num_fixed_tasks} fixed tasks, "
                           f"{penalty_weight} penalty weight. ")
@@ -48,7 +49,7 @@ def main():
                     new_iteration = Iteration()
                     output_folder = out.new_output_folder(num_households=num_households,
                                                           num_dependent_tasks=num_tasks_dependent,
-                                                          num_full_flex_task_min=num_full_flex_tasks,
+                                                          num_full_flex_task_min=num_full_flex_tasks_min,
                                                           num_semi_flex_task_min=num_semi_flex_tasks,
                                                           inconvenience_cost_weight=penalty_weight,
                                                           repeat=r)
@@ -68,13 +69,13 @@ def main():
                                 new_iteration.new(algorithm=alg, num_households=num_households,
                                                   max_demand_multiplier=maxium_demand_multiplier,
                                                   num_tasks_dependent=num_tasks_dependent,
-                                                  full_flex_task_min=num_full_flex_tasks, full_flex_task_max=0,
+                                                  full_flex_task_min=num_full_flex_tasks_min, full_flex_task_max=num_full_flex_tasks_max,
                                                   semi_flex_task_min=num_semi_flex_tasks, semi_flex_task_max=0,
                                                   fixed_task_min=num_fixed_tasks, fixed_task_max=0,
                                                   inconvenience_cost_weight=penalty_weight,
                                                   max_care_factor=care_f_max,
                                                   data_folder=output_folder)
-                            new_data = False
+                            # new_data = False
                         else:
                             preferred_demand_profile, prices = \
                                 new_iteration.read(algorithm=alg, inconvenience_cost_weight=penalty_weight,
