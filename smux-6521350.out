@@ -1,0 +1,7 @@
+  PID TTY      STAT   TIME COMMAND
+24526 ?        S      0:00 /bin/bash /opt/slurm/var/spool/job6521350/slurm_script
+24581 ?        Ss     0:00 tmux new-session -d -s interactive_session bash
+24582 pts/0    Ss+    0:00 bash
+24804 pts/0    S      0:00 timeout 10s abrt-cli status --since=1605163320
+24806 pts/0    D      0:00 abrt-cli status --since=1605163320
+24873 ?        R      0:00 ps x
