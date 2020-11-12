@@ -75,12 +75,13 @@ def main():
                                                   fixed_task_min=num_fixed_tasks, fixed_task_max=0,
                                                   inconvenience_cost_weight=penalty_weight,
                                                   max_care_factor=care_f_max,
-                                                  data_folder=output_folder)
+                                                  data_folder=out.output_parent_folder)
                             new_data = False
                         else:
                             preferred_demand_profile, prices = \
                                 new_iteration.read(algorithm=alg, inconvenience_cost_weight=penalty_weight,
-                                                   num_dependent_tasks=num_tasks_dependent)
+                                                   num_dependent_tasks=num_tasks_dependent,
+                                                   read_from_folder=out.output_parent_folder)
                         start_time_probability = new_iteration.begin_iteration(starting_prices=prices)
                         new_iteration.finalise_schedules(num_samples=num_samples,
                                                          start_time_probability=start_time_probability)
