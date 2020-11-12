@@ -91,7 +91,8 @@ def main():
                                                         aggregator_tracker=new_iteration.aggregator.tracker,
                                                         aggregator_final=new_iteration.aggregator.final,
                                                         community_tracker=new_iteration.community.tracker,
-                                                        community_final=new_iteration.community.final)
+                                                        community_final=new_iteration.community.final, 
+                                                        print_demands=True, print_prices=True, print_summary=True)
                         experiment_tracker[num_experiment].update(overview_dict)
                         plot_layout.append(plots)
                         plot_final_layout.append(plots_final)
