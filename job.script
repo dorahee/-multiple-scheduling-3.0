@@ -1,9 +1,13 @@
 #!/bin/bash
-#BATCH --job-name=fw-ddsm
+
+#SBATCH --job-name=fw-ddsm
 #SBATCH --partition=short
 #SBATCH --time=01:00:00
 #SBATCH --ntasks=1
-#SBATCH --mem-per-cpu=4096
+#SBATCH --mem=32768
 #SBATCH --cpus-per-task=32
-module load openmpi/1.10.7-mlx
-mpiexec ./run.py
+
+# module load openmpi/1.10.7-mlx
+
+python3 ./run.py
+
