@@ -1,8 +1,0 @@
-Arguments count: 4
-Argument      0: ./monarch_run.py
-Argument      1: 8
-Argument      2: 8
-Traceback (most recent call last):
-  File "./monarch_run.py", line 134, in <module>
-    num_tasks_dependent_range = [int(arg)]
-ValueError: invalid literal for int() with base 10: 'test_exp'
