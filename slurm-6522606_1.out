@@ -1,0 +1,34 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 5
+Argument      2: 0
+Argument      3: 10
+Argument      4: 8
+Argument      5: 1
+Argument      6: test_exp
+----------------------------------------
+5 households, 10 dependent tasks, 5 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 0 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.381, 56 iterations, cost 1636358.74, using minizinc_fw
+2. Best step size 0.077, 11 iterations, cost 1634457.35, using minizinc_fw
+3. Best step size 0.032, 4 iterations, cost 1634316.77, using minizinc_fw
+4. Best step size 0, 0 iterations, cost 1634316.77, using minizinc_fw
+Converged in 4
+Data are written and graphs are painted. 
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.336, 69 iterations, cost 1980485.54, using ogsa_fw
+2. Best step size 0.118, 25 iterations, cost 1972200.7, using ogsa_fw
+3. Best step size 0.064, 12 iterations, cost 1970476.84, using ogsa_fw
+4. Best step size 0.093, 16 iterations, cost 1968952.78, using ogsa_fw
+5. Best step size 0.003, 2 iterations, cost 1968940.42, using ogsa_fw
+6. Best step size 0.054, 6 iterations, cost 1968792.0, using ogsa_fw
+7. Best step size 0, 0 iterations, cost 1968792.0, using ogsa_fw
+Converged in 7
+Data are written and graphs are painted. 
+----------------------------------------
+----------------------------------------
+Experiment is finished. 
+{0: {'no_households': 5, 'penalty_weight': 0, 'no_dependent_tasks': 10, 'no_fully_flexible_tasks_min': 5, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 1, 'init_PAR': 8.16, 'PAR': 5.37, 'init_max_demand': 19805.0, 'max_demand': 13037.27, 'total_demand': 116503.0, 'demand_reduction': 0.34, 'cost_reduction': 0.21, 'pricing_time': 0.0038199999999999996, 'rescheduling_time': 4.191999999999999}, 1: {'no_households': 5, 'penalty_weight': 0, 'no_dependent_tasks': 10, 'no_fully_flexible_tasks_min': 5, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 1, 'init_PAR': 7.54, 'PAR': 3.86, 'init_max_demand': 22100.0, 'max_demand': 11298.13, 'total_demand': 140628.0, 'demand_reduction': 0.49, 'cost_reduction': 0.23, 'pricing_time': 0.0043125, 'rescheduling_time': 0.006525}}

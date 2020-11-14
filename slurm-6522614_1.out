@@ -1,0 +1,32 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 5
+Argument      2: 0
+Argument      3: 10
+Argument      4: 8
+Argument      5: 1
+Argument      6: test_exp
+----------------------------------------
+5 households, 10 dependent tasks, 5 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 0 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.195, 40 iterations, cost 563565.24, using minizinc_fw
+2. Best step size 0.004, 1 iterations, cost 563386.77, using minizinc_fw
+3. Best step size 0, 0 iterations, cost 563386.77, using minizinc_fw
+Converged in 3
+Data are written and graphs are painted. 
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.249, 44 iterations, cost 557240.38, using ogsa_fw
+2. Best step size 0.058, 17 iterations, cost 553995.69, using ogsa_fw
+3. Best step size 0.123, 29 iterations, cost 550557.8, using ogsa_fw
+4. Best step size 0.101, 18 iterations, cost 549604.68, using ogsa_fw
+5. Best step size 0.059, 10 iterations, cost 549389.79, using ogsa_fw
+6. Best step size 0, 0 iterations, cost 549389.79, using ogsa_fw
+Converged in 6
+Data are written and graphs are painted. 
+----------------------------------------
+----------------------------------------
+Experiment is finished. 
+{0: {'no_households': 5, 'penalty_weight': 0, 'no_dependent_tasks': 10, 'no_fully_flexible_tasks_min': 5, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 1, 'init_PAR': 8.81, 'PAR': 7.21, 'init_max_demand': 7200.0, 'max_demand': 5896.19, 'total_demand': 39238.0, 'demand_reduction': 0.18, 'cost_reduction': 0.21, 'pricing_time': 0.00315, 'rescheduling_time': 1.0699999999999998}, 1: {'no_households': 5, 'penalty_weight': 0, 'no_dependent_tasks': 10, 'no_fully_flexible_tasks_min': 5, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 1, 'init_PAR': 8.81, 'PAR': 4.87, 'init_max_demand': 7200.0, 'max_demand': 3981.68, 'total_demand': 39238.0, 'demand_reduction': 0.45, 'cost_reduction': 0.23, 'pricing_time': 0.0046, 'rescheduling_time': 0.0037428571428571424}}
