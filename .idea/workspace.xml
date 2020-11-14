@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/future.job">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="252">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -73,9 +73,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="49" />
-    <option name="width" value="2560" />
+    <option name="width" value="1280" />
     <option name="height" value="1364" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -232,18 +232,18 @@
       <workItem from="1604981596811" duration="550000" />
       <workItem from="1605000584750" duration="11720000" />
       <workItem from="1605175569661" duration="2167000" />
-      <workItem from="1605353485621" duration="3413000" />
+      <workItem from="1605353485621" duration="3526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29468000" />
+    <option name="totallyTimeSpent" value="29581000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="49" width="2560" height="1364" extended-state="0" />
+    <frame x="0" y="49" width="1280" height="1364" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2316587" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.47312704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -465,8 +465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/future.job">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        <state relative-caret-position="252">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
