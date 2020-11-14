@@ -23,7 +23,7 @@
 PARAMS=`head -n ${SLURM_ARRAY_TASK_ID} PLIST | tail -1`
 
 ### python3 ./run3.py #household #dependent #penalty
-python3 ./run3.py ${SLURM_CPUS_PER_TASK} ${PARAMS}
+python3 ./run3.py ${SLURM_ARRAY_TASK_ID} ${SLURM_CPUS_PER_TASK} ${PARAMS}
 
 # SLURM_CPUS_PER_TASK will get the value from --cpus-per-task
 
