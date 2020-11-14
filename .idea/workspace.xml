@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fa0ef66-11ba-463e-b9de-2e16f4819ef8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PLIST" beforeDir="false" afterPath="$PROJECT_DIR$/PLIST" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/probability.csv" beforeDir="false" afterPath="$PROJECT_DIR$/archived/probability.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/future.job" beforeDir="false" afterPath="$PROJECT_DIR$/future.job" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job.original" beforeDir="false" afterPath="$PROJECT_DIR$/archived/job.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job.script" beforeDir="false" afterPath="$PROJECT_DIR$/archived/job.script" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monarch_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/monarch_run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state relative-caret-position="336">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -44,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/future.job">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="280">
+              <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -72,10 +66,10 @@
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/run2.py" />
         <option value="$PROJECT_DIR$/monarch_run.py" />
-        <option value="$PROJECT_DIR$/future.job" />
         <option value="$PROJECT_DIR$/data/PLIST" />
         <option value="$PROJECT_DIR$/PLIST" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/future.job" />
       </list>
     </option>
   </component>
@@ -238,12 +232,12 @@
       <workItem from="1604981596811" duration="550000" />
       <workItem from="1605000584750" duration="11720000" />
       <workItem from="1605175569661" duration="2167000" />
-      <workItem from="1605353485621" duration="2679000" />
+      <workItem from="1605353485621" duration="2846000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28734000" />
+    <option name="totallyTimeSpent" value="28901000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="49" width="2560" height="1364" extended-state="0" />
@@ -462,17 +456,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/future.job">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="336">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/future.job">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="280">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
         </state>
       </provider>
     </entry>
