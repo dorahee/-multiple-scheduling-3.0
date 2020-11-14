@@ -1,4 +1,5 @@
 from multiprocessing import freeze_support
+import sys
 from fw_ddsm.iteration import *
 from fw_ddsm.output import *
 from pandas import DataFrame
@@ -122,6 +123,17 @@ def main(num_households, num_tasks_dependent, penalty_weight, num_cpus=None, exp
 
 if __name__ == '__main__':
     freeze_support()
+    print(f"Arguments count: {len(sys.argv)}")
+    for i, arg in enumerate(sys.argv):
+        arg = int(arg)
+        if i == 1:
+            num_households_range = [arg]
+        elif i == 2:
+            penalty_weight_range = [arg]
+        elif i == 3:
+            num_tasks_dependent_range = [arg]
+
+        print(f"Argument {i:>6}: {arg}")
     for h in num_households_range:
         for w in penalty_weight_range:
             for dt in num_tasks_dependent_range:
