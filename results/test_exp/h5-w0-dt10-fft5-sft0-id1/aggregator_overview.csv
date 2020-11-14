@@ -1,2 +1,2 @@
 ,init_PAR,PAR,init_max_demand,max_demand,total_demand,demand_reduction,cost_reduction,pricing_time,rescheduling_time
-0,8.81,4.87,7200.0,3981.68,39238.0,0.45,0.23,0.0046,0.0037428571428571424
+0,5.86,3.05,18165.0,9457.15,148894.0,0.48,0.28,0.0043625,0.0022

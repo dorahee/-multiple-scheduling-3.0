@@ -1,0 +1,36 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 5
+Argument      2: 3
+Argument      3: 100
+Argument      4: 16
+Argument      5: 2
+Argument      6: test_exp
+----------------------------------------
+5 households, 100 dependent tasks, 5 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 3 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.986, 59 iterations, cost 1061733.97, using minizinc_fw
+2. Best step size 0.958, 18 iterations, cost 1040656.41, using minizinc_fw
+3. Best step size 0.968, 11 iterations, cost 1032341.71, using minizinc_fw
+4. Best step size 0.715, 20 iterations, cost 1028877.83, using minizinc_fw
+5. Best step size 0.397, 5 iterations, cost 1028232.0, using minizinc_fw
+6. Best step size 0.458, 3 iterations, cost 1027943.14, using minizinc_fw
+7. Best step size 0.1, 5 iterations, cost 1027725.74, using minizinc_fw
+8. Best step size 0.001, 1 iterations, cost 1027725.7, using minizinc_fw
+9. Best step size 0.083, 1 iterations, cost 1027691.04, using minizinc_fw
+10. Best step size 0.019, 2 iterations, cost 1027668.63, using minizinc_fw
+11. Best step size 0, 0 iterations, cost 1027668.63, using minizinc_fw
+Converged in 11
+Data are written and graphs are painted. 
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.636, 79 iterations, cost 955141.66, using ogsa_fw
+2. Best step size 0, 0 iterations, cost 955141.66, using ogsa_fw
+Converged in 2
+Data are written and graphs are painted. 
+----------------------------------------
+----------------------------------------
+Experiment is finished. 
+{0: {'no_households': 5, 'penalty_weight': 3, 'no_dependent_tasks': 100, 'no_fully_flexible_tasks_min': 5, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 2, 'init_PAR': 9.08, 'PAR': 8.45, 'init_max_demand': 12900.0, 'max_demand': 12004.99, 'total_demand': 68223.0, 'demand_reduction': 0.07, 'cost_reduction': 0.19, 'pricing_time': 0.003841666666666667, 'rescheduling_time': 2.5658333333333334}, 1: {'no_households': 5, 'penalty_weight': 3, 'no_dependent_tasks': 100, 'no_fully_flexible_tasks_min': 5, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 2, 'init_PAR': 9.08, 'PAR': 4.78, 'init_max_demand': 12900.0, 'max_demand': 6796.57, 'total_demand': 68223.0, 'demand_reduction': 0.47, 'cost_reduction': 0.24, 'pricing_time': 0.006966666666666666, 'rescheduling_time': 0.0034000000000000002}}
