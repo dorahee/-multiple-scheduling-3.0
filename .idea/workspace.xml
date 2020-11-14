@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0fa0ef66-11ba-463e-b9de-2e16f4819ef8" name="Default Changelist" comment="" />
+    <list default="true" id="0fa0ef66-11ba-463e-b9de-2e16f4819ef8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/PLIST" beforeDir="false" afterPath="$PROJECT_DIR$/PLIST" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/archived/probability.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/probability.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm-6522597_1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm-6522597_2.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm-6522597_3.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm-6522597_4.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm-6522597_5.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm-6522597_6.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm-6522597_7.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/slurm-6522597_8.out" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +50,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/future.job">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="706">
-              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+            <state relative-caret-position="202">
+              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/slurm-6522589_8.out">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PLIST">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            <state relative-caret-position="112">
+              <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -80,8 +86,8 @@
         <option value="$PROJECT_DIR$/monarch_run.py" />
         <option value="$PROJECT_DIR$/data/PLIST" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/PLIST" />
         <option value="$PROJECT_DIR$/future.job" />
+        <option value="$PROJECT_DIR$/PLIST" />
       </list>
     </option>
   </component>
@@ -105,6 +111,11 @@
             <path>
               <item name="multiple-scheduling-3.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="multiple-scheduling-3.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiple-scheduling-3.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multiple-scheduling-3.0" type="462c0819:PsiDirectoryNode" />
+              <item name="archived" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="multiple-scheduling-3.0" type="b2602c69:ProjectViewProjectNode" />
@@ -135,6 +146,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/archived" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -244,12 +256,12 @@
       <workItem from="1604981596811" duration="550000" />
       <workItem from="1605000584750" duration="11720000" />
       <workItem from="1605175569661" duration="2167000" />
-      <workItem from="1605353485621" duration="5369000" />
+      <workItem from="1605353485621" duration="5930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31424000" />
+    <option name="totallyTimeSpent" value="31985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="49" width="2560" height="1364" extended-state="0" />
@@ -478,22 +490,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PLIST">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/slurm-6522589_8.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/slurm-6522597_8.out">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/future.job">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        <state relative-caret-position="202">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/slurm-6522589_8.out">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/PLIST">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
