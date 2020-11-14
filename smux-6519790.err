@@ -1,5 +1,0 @@
-slurmstepd: error: _is_a_lwp: open() /proc/19326/status failed: No such file or directory
-slurmstepd: error: _is_a_lwp: open() /proc/34454/status failed: No such file or directory
-slurmstepd: error: _is_a_lwp: open() /proc/32176/status failed: No such file or directory
-slurmstepd: error: _is_a_lwp: open() /proc/4436/status failed: No such file or directory
-slurmstepd: error: *** JOB 6519790 ON mi06 CANCELLED AT 2020-11-12T14:53:28 DUE TO TIME LIMIT ***
