@@ -7,7 +7,7 @@
 #SBATCH --mem=32768
 #SBATCH --cpus-per-task=8
 #SBATCH --array=1-8
-#SBATCH --mail-type=ALL,ARRAY_TASKS
+#SBATCH --mail-type=END,ARRAY_TASKS
 #SBATCH --mail-user=dora.he3@monash.edu
 
 ### update the upperbound in array to the wc -l PLIST
@@ -25,7 +25,7 @@
 PARAMS=`head -n ${SLURM_ARRAY_TASK_ID} PLIST | tail -1`
 
 ### python3 ./run3.py #household #dependent #penalty
-python3 ./run3.py ${PARAMS} ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "test_exp"
+python3 ./monarch_run.py ${PARAMS} ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "test_exp"
 
 # SLURM_CPUS_PER_TASK will get the value from --cpus-per-task
 
