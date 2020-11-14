@@ -126,19 +126,20 @@ if __name__ == '__main__':
     freeze_support()
     print(f"Arguments count: {len(sys.argv)}")
     for i, arg in enumerate(sys.argv):
-        arg = int(arg)
         if i == 1:
-            id_job = arg
+            num_households_range = [int(arg)]
         elif i == 2:
-            cpus_nums = arg
+            penalty_weight_range = [int(arg)]
         elif i == 3:
-            num_households_range = [arg]
+            num_tasks_dependent_range = [int(arg)]
         elif i == 4:
-            penalty_weight_range = [arg]
+            cpus_nums = int(arg)
         elif i == 5:
-            num_tasks_dependent_range = [arg]
+            id_job = int(arg)
+        elif i == 6:
+            name_exp = str(arg)
         print(f"Argument {i:>6}: {arg}")
-        
+
     for h in num_households_range:
         for w in penalty_weight_range:
             for dt in num_tasks_dependent_range:
