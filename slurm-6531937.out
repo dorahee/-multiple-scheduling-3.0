@@ -1,0 +1,67 @@
+----------------------------------------
+5000 households, 0 dependent tasks, at least 10 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.016, 16 iterations, cost 2620079112.35, using minizinc_fw
+2. Best step size 0.021, 21 iterations, cost 2557932035.39, using minizinc_fw
+3. Best step size 0.014, 14 iterations, cost 2530165614.07, using minizinc_fw
+4. Best step size 0.001, 1 iterations, cost 2529229125.36, using minizinc_fw
+5. Best step size 0, 0 iterations, cost 2529229125.36, using minizinc_fw
+Converged in 5
+----------------------------------------
+Data are written and graphs are painted. 
+----------------------------------------
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.012, 12 iterations, cost 2630985192.66, using ogsa_fw
+2. Best step size 0.018, 18 iterations, cost 2572242859.68, using ogsa_fw
+3. Best step size 0.009, 9 iterations, cost 2547983609.7, using ogsa_fw
+4. Best step size 0.013, 12 iterations, cost 2518660170.75, using ogsa_fw
+5. Best step size 0.008, 8 iterations, cost 2504913872.09, using ogsa_fw
+6. Best step size 0.012, 12 iterations, cost 2487533555.91, using ogsa_fw
+7. Best step size 0.01, 10 iterations, cost 2475074415.75, using ogsa_fw
+8. Best step size 0.007, 7 iterations, cost 2467651227.7, using ogsa_fw
+9. Best step size 0.004, 4 iterations, cost 2463462917.83, using ogsa_fw
+10. Best step size 0.007, 7 iterations, cost 2457041712.12, using ogsa_fw
+11. Best step size 0.003, 3 iterations, cost 2454136148.02, using ogsa_fw
+12. Best step size 0.011, 11 iterations, cost 2447356914.23, using ogsa_fw
+13. Best step size 0.01, 10 iterations, cost 2442020969.01, using ogsa_fw
+14. Best step size 0.008, 7 iterations, cost 2437967378.49, using ogsa_fw
+15. Best step size 0.003, 3 iterations, cost 2436411125.57, using ogsa_fw
+16. Best step size 0.003, 3 iterations, cost 2435209161.72, using ogsa_fw
+17. Best step size 0.003, 2 iterations, cost 2434165407.1, using ogsa_fw
+18. Best step size 0.002, 2 iterations, cost 2433326875.23, using ogsa_fw
+19. Best step size 0.002, 2 iterations, cost 2432498864.43, using ogsa_fw
+20. Best step size 0.002, 2 iterations, cost 2431660142.62, using ogsa_fw
+21. Best step size 0.001, 1 iterations, cost 2431194732.41, using ogsa_fw
+22. Best step size 0.013, 12 iterations, cost 2428072912.45, using ogsa_fw
+23. Best step size 0.009, 9 iterations, cost 2426617422.78, using ogsa_fw
+24. Best step size 0.001, 1 iterations, cost 2426294460.93, using ogsa_fw
+25. Best step size 0.002, 2 iterations, cost 2425822349.69, using ogsa_fw
+26. Best step size 0.001, 1 iterations, cost 2425616784.5, using ogsa_fw
+27. Best step size 0.001, 1 iterations, cost 2425424421.7, using ogsa_fw
+28. Best step size 0.003, 3 iterations, cost 2425156654.11, using ogsa_fw
+29. Best step size 0.002, 2 iterations, cost 2424909270.21, using ogsa_fw
+30. Best step size 0.001, 1 iterations, cost 2424717247.23, using ogsa_fw
+31. Best step size 0.001, 1 iterations, cost 2424614040.41, using ogsa_fw
+32. Best step size 0.001, 1 iterations, cost 2424538783.13, using ogsa_fw
+33. Best step size 0.001, 1 iterations, cost 2424440555.05, using ogsa_fw
+34. Best step size 0.001, 1 iterations, cost 2424376296.01, using ogsa_fw
+35. Best step size 0.001, 1 iterations, cost 2424278724.55, using ogsa_fw
+36. Best step size 0.001, 1 iterations, cost 2424233673.9, using ogsa_fw
+37. Best step size 0, 0 iterations, cost 2424233673.9, using ogsa_fw
+Converged in 37
+----------------------------------------
+Data are written and graphs are painted. 
+----------------------------------------
+Traceback (most recent call last):
+  File "./single_run.py", line 132, in <module>
+    main()
+  File "./single_run.py", line 110, in main
+    save(Tabs(tabs=[tab2, tab1]))
+  File "/home/dorah/.local/lib/python3.8/site-packages/bokeh/io/saving.py", line 86, in save
+    _save_helper(obj, filename, resources, title, template, theme)
+  File "/home/dorah/.local/lib/python3.8/site-packages/bokeh/io/saving.py", line 150, in _save_helper
+    with open(filename, mode="w", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: "('results/2020-11-19_23-05-17//h5000-w1-dt0-fft10-sft0-r0/', 'results/2020-11-19_23-05-17/', '2020-11-19_23-05-17')plots.html"
