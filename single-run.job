@@ -9,7 +9,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=dora.he3@monash.edu
 
-python3 ./monarch_run.py
+python3 ./single_run.py
 
 
 
