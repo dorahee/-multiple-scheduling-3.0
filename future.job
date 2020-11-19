@@ -7,7 +7,7 @@
 #SBATCH --mem=32768
 #SBATCH --cpus-per-task=16
 #SBATCH --array=1-8
-#SBATCH --mail-type=END,ARRAY_TASKS
+#SBATCH --mail-type=ALL,ARRAY_TASKS
 #SBATCH --mail-user=dora.he3@monash.edu
 
 ### update the upperbound in array to the wc -l PLIST
