@@ -13,3 +13,7 @@ Argument      6: dependent_tasks
 0. Aggregator is created. 
 1. Best step size 0.014, 14 iterations, cost 1296952390.29, using minizinc_fw
 2. Best step size 0.018, 17 iterations, cost 1270905595.97, using minizinc_fw
+3. Best step size 0.011, 11 iterations, cost 1257718298.65, using minizinc_fw
+4. Best step size 0.01, 10 iterations, cost 1250240523.71, using minizinc_fw
+5. Best step size 0.002, 2 iterations, cost 1249867043.24, using minizinc_fw
+6. Best step size 0.001, 1 iterations, cost 1249680111.06, using minizinc_fw
