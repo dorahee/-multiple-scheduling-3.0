@@ -1,0 +1,66 @@
+----------------------------------------
+5000 households, 0 dependent tasks, at least 10 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+Exception ignored in: <function BaseSubprocessTransport.__del__ at 0x7f31966ea1f0>
+Traceback (most recent call last):
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/base_subprocess.py", line 126, in __del__
+    self.close()
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/base_subprocess.py", line 104, in close
+    proto.pipe.close()
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/unix_events.py", line 536, in close
+    self._close(None)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/unix_events.py", line 560, in _close
+    self._loop.call_soon(self._call_connection_lost, exc)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/base_events.py", line 719, in call_soon
+    self._check_closed()
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/base_events.py", line 508, in _check_closed
+    raise RuntimeError('Event loop is closed')
+RuntimeError: Event loop is closed
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 51, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/household.py", line 161, in schedule_household
+    = household_scheduling.minizinc_model(model_file=model, solver=solver, search=search,
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/scripts/household_scheduling.py", line 71, in minizinc_model
+    result = ins.solve(timeout=timedelta(seconds=time_out))
+  File "/home/dorah/.local/lib/python3.8/site-packages/minizinc/instance.py", line 117, in solve
+    return asyncio.run(coroutine)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/home/dorah/.local/lib/python3.8/site-packages/minizinc/CLI/instance.py", line 418, in solve_async
+    async for result in self.solutions(
+  File "/home/dorah/.local/lib/python3.8/site-packages/minizinc/CLI/instance.py", line 382, in solutions
+    solution, statistics = parse_solution(
+  File "/home/dorah/.local/lib/python3.8/site-packages/minizinc/result.py", line 335, in parse_solution
+    tmp = json.loads(raw, enum_map=enum_map, cls=MZNJSONDecoder)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 6 column 1 (char 90)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./single_run.py", line 133, in <module>
+    main()
+  File "./single_run.py", line 86, in main
+    start_time_probability = new_iteration.begin_iteration(starting_prices=prices, num_cpus=64)
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/iteration.py", line 78, in begin_iteration
+    = self.community.schedule(num_iteration=num_iteration, prices=prices,
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/community.py", line 125, in schedule
+    results = self.__schedule_multiple_processing(households=households, prices=prices,
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/community.py", line 214, in __schedule_multiple_processing
+    results = pool.starmap_async(Household.schedule_household,
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 771, in get
+    raise self._value
+json.decoder.JSONDecodeError: Extra data: line 6 column 1 (char 90)
