@@ -48,12 +48,13 @@ def main():
                     print("----------------------------------------")
 
                     new_iteration = Iteration()
-                    output_folder = out.new_output_folder(num_households=num_households,
-                                                          num_dependent_tasks=num_tasks_dependent,
-                                                          num_full_flex_task_min=num_full_flex_tasks_min,
-                                                          num_semi_flex_task_min=num_semi_flex_tasks,
-                                                          inconvenience_cost_weight=penalty_weight,
-                                                          repeat=r)
+                    output_folder, output_parent_folder, this_date_time \
+                        = out.new_output_folder(num_households=num_households,
+                                                num_dependent_tasks=num_tasks_dependent,
+                                                num_full_flex_task_min=num_full_flex_tasks_min,
+                                                num_semi_flex_task_min=num_semi_flex_tasks,
+                                                inconvenience_cost_weight=penalty_weight,
+                                                repeat=r)
                     plot_layout = []
                     plot_final_layout = []
                     for alg in algorithms.values():
