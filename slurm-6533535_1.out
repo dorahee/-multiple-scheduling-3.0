@@ -4,11 +4,13 @@ Argument      1: 100
 Argument      2: 6
 Argument      3: 1
 Argument      4: 16
-Argument      5: 5
+Argument      5: 1
 Argument      6: dependent_tasks
 ----------------------------------------
 100 households, 1 dependent tasks, 10 fully flexible tasks, 10 semi-flexible tasks, 0 fixed tasks, 6 penalty weight. 
 ----------------------------------------
 0. The community is created. 
 0. Aggregator is created. 
-<class 'Exception'>
+('Extra data: line 6 column 1 (char 132)',)
+
+/opt/slurm/var/spool/job6533535/slurm_script: line 39: lit: command not found
