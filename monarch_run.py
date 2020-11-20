@@ -151,5 +151,6 @@ if __name__ == '__main__':
                          experiment_name=name_exp,
                          num_cpus=cpus_nums,
                          job_id=id_job)
-    except Exception:
-        print(Exception)
+    except Exception as e:
+        print(e.args)
+        print()
