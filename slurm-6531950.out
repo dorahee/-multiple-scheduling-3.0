@@ -1,0 +1,187 @@
+----------------------------------------
+5000 households, 1 dependent tasks, at least 10 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.015, 15 iterations, cost 2757367556.21, using minizinc_fw
+2. Best step size 0.013, 13 iterations, cost 2697416676.88, using minizinc_fw
+3. Best step size 0.013, 13 iterations, cost 2647274135.62, using minizinc_fw
+4. Best step size 0.011, 11 iterations, cost 2610911232.86, using minizinc_fw
+5. Best step size 0.005, 5 iterations, cost 2602283038.6, using minizinc_fw
+6. Best step size 0.007, 7 iterations, cost 2585075695.96, using minizinc_fw
+7. Best step size 0.006, 6 iterations, cost 2575801075.47, using minizinc_fw
+8. Best step size 0.01, 10 iterations, cost 2560651552.27, using minizinc_fw
+9. Best step size 0.012, 12 iterations, cost 2545793460.74, using minizinc_fw
+10. Best step size 0.006, 6 iterations, cost 2538442136.89, using minizinc_fw
+11. Best step size 0.007, 7 iterations, cost 2531894653.33, using minizinc_fw
+12. Best step size 0.002, 2 iterations, cost 2530231176.44, using minizinc_fw
+13. Best step size 0.002, 2 iterations, cost 2529256722.52, using minizinc_fw
+14. Best step size 0.008, 8 iterations, cost 2523578786.37, using minizinc_fw
+15. Best step size 0.004, 4 iterations, cost 2521378517.99, using minizinc_fw
+16. Best step size 0, 0 iterations, cost 2521378517.99, using minizinc_fw
+Converged in 16
+----------------------------------------
+Data are written and graphs are painted. 
+----------------------------------------
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.011, 11 iterations, cost 2775416272.53, using ogsa_fw
+2. Best step size 0.01, 10 iterations, cost 2724934446.45, using ogsa_fw
+3. Best step size 0.01, 10 iterations, cost 2679458606.86, using ogsa_fw
+4. Best step size 0.008, 8 iterations, cost 2647229274.87, using ogsa_fw
+5. Best step size 0.014, 14 iterations, cost 2604706552.31, using ogsa_fw
+6. Best step size 0.011, 11 iterations, cost 2578164654.83, using ogsa_fw
+7. Best step size 0.01, 10 iterations, cost 2555872632.11, using ogsa_fw
+8. Best step size 0.006, 6 iterations, cost 2543465823.26, using ogsa_fw
+9. Best step size 0.006, 6 iterations, cost 2534437736.88, using ogsa_fw
+10. Best step size 0.009, 8 iterations, cost 2522984527.48, using ogsa_fw
+11. Best step size 0.005, 5 iterations, cost 2517352993.8, using ogsa_fw
+12. Best step size 0.003, 3 iterations, cost 2514279463.13, using ogsa_fw
+13. Best step size 0.009, 9 iterations, cost 2506177453.4, using ogsa_fw
+14. Best step size 0.003, 3 iterations, cost 2503443869.9, using ogsa_fw
+15. Best step size 0.003, 3 iterations, cost 2501473339.2, using ogsa_fw
+16. Best step size 0.003, 3 iterations, cost 2499372060.51, using ogsa_fw
+17. Best step size 0.003, 3 iterations, cost 2497555169.6, using ogsa_fw
+18. Best step size 0.001, 1 iterations, cost 2496841568.32, using ogsa_fw
+19. Best step size 0.002, 2 iterations, cost 2495854843.87, using ogsa_fw
+20. Best step size 0.001, 1 iterations, cost 2495258728.7, using ogsa_fw
+21. Best step size 0.004, 4 iterations, cost 2493412034.77, using ogsa_fw
+22. Best step size 0.001, 1 iterations, cost 2492980814.95, using ogsa_fw
+23. Best step size 0.001, 1 iterations, cost 2492677517.84, using ogsa_fw
+24. Best step size 0.001, 1 iterations, cost 2492337912.02, using ogsa_fw
+25. Best step size 0.004, 4 iterations, cost 2491538277.51, using ogsa_fw
+26. Best step size 0.003, 3 iterations, cost 2490818125.79, using ogsa_fw
+27. Best step size 0.001, 1 iterations, cost 2490598513.61, using ogsa_fw
+28. Best step size 0.001, 1 iterations, cost 2490393600.76, using ogsa_fw
+29. Best step size 0, 0 iterations, cost 2490393600.76, using ogsa_fw
+Converged in 29
+----------------------------------------
+Data are written and graphs are painted. 
+----------------------------------------
+----------------------------------------
+----------------------------------------
+5000 households, 3 dependent tasks, at least 10 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.015, 15 iterations, cost 2756185522.49, using minizinc_fw
+2. Best step size 0.014, 14 iterations, cost 2694484275.69, using minizinc_fw
+3. Best step size 0.013, 13 iterations, cost 2644019445.72, using minizinc_fw
+4. Best step size 0.011, 11 iterations, cost 2608547909.57, using minizinc_fw
+5. Best step size 0.005, 5 iterations, cost 2598095799.18, using minizinc_fw
+6. Best step size 0.009, 9 iterations, cost 2582206298.11, using minizinc_fw
+7. Best step size 0.006, 6 iterations, cost 2570443673.5, using minizinc_fw
+8. Best step size 0.007, 7 iterations, cost 2560851015.96, using minizinc_fw
+9. Best step size 0.004, 4 iterations, cost 2556013092.26, using minizinc_fw
+10. Best step size 0.009, 9 iterations, cost 2546535929.38, using minizinc_fw
+11. Best step size 0.005, 5 iterations, cost 2541926012.26, using minizinc_fw
+12. Best step size 0.007, 7 iterations, cost 2536031950.34, using minizinc_fw
+13. Best step size 0.005, 5 iterations, cost 2532578241.61, using minizinc_fw
+14. Best step size 0.003, 3 iterations, cost 2531676037.61, using minizinc_fw
+15. Best step size 0, 0 iterations, cost 2531676037.61, using minizinc_fw
+Converged in 15
+----------------------------------------
+Data are written and graphs are painted. 
+----------------------------------------
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.013, 13 iterations, cost 2768057267.67, using ogsa_fw
+2. Best step size 0.011, 11 iterations, cost 2713296557.08, using ogsa_fw
+3. Best step size 0.011, 11 iterations, cost 2665306455.89, using ogsa_fw
+4. Best step size 0.011, 11 iterations, cost 2629072525.96, using ogsa_fw
+5. Best step size 0.014, 14 iterations, cost 2589920302.48, using ogsa_fw
+6. Best step size 0.01, 10 iterations, cost 2570057502.49, using ogsa_fw
+7. Best step size 0.007, 7 iterations, cost 2555665047.96, using ogsa_fw
+8. Best step size 0.008, 8 iterations, cost 2542873989.43, using ogsa_fw
+9. Best step size 0.012, 12 iterations, cost 2526102352.68, using ogsa_fw
+10. Best step size 0.008, 8 iterations, cost 2515858518.75, using ogsa_fw
+11. Best step size 0.005, 5 iterations, cost 2511369099.07, using ogsa_fw
+12. Best step size 0.004, 4 iterations, cost 2507658741.14, using ogsa_fw
+13. Best step size 0.002, 2 iterations, cost 2505806947.53, using ogsa_fw
+14. Best step size 0.01, 10 iterations, cost 2499913136.92, using ogsa_fw
+15. Best step size 0.003, 3 iterations, cost 2497479541.67, using ogsa_fw
+16. Best step size 0.003, 3 iterations, cost 2495388176.69, using ogsa_fw
+17. Best step size 0.002, 2 iterations, cost 2494224209.94, using ogsa_fw
+18. Best step size 0.005, 5 iterations, cost 2492620609.6, using ogsa_fw
+19. Best step size 0.003, 3 iterations, cost 2491611945.55, using ogsa_fw
+20. Best step size 0.002, 2 iterations, cost 2491045483.79, using ogsa_fw
+21. Best step size 0.004, 4 iterations, cost 2490196959.01, using ogsa_fw
+22. Best step size 0.003, 3 iterations, cost 2489629428.54, using ogsa_fw
+23. Best step size 0.001, 1 iterations, cost 2489397718.46, using ogsa_fw
+24. Best step size 0.001, 1 iterations, cost 2489289201.26, using ogsa_fw
+25. Best step size 0.002, 2 iterations, cost 2489089387.82, using ogsa_fw
+26. Best step size 0, 0 iterations, cost 2489089387.82, using ogsa_fw
+Converged in 26
+----------------------------------------
+Data are written and graphs are painted. 
+----------------------------------------
+----------------------------------------
+----------------------------------------
+5000 households, 6 dependent tasks, at least 10 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.016, 16 iterations, cost 2753375329.5, using minizinc_fw
+2. Best step size 0.017, 17 iterations, cost 2677918349.84, using minizinc_fw
+3. Best step size 0.013, 13 iterations, cost 2631055225.41, using minizinc_fw
+4. Best step size 0.005, 5 iterations, cost 2622489778.37, using minizinc_fw
+5. Best step size 0.011, 11 iterations, cost 2603146006.51, using minizinc_fw
+6. Best step size 0.01, 10 iterations, cost 2580043336.83, using minizinc_fw
+7. Best step size 0.005, 5 iterations, cost 2572508791.06, using minizinc_fw
+8. Best step size 0.004, 4 iterations, cost 2570236884.03, using minizinc_fw
+9. Best step size 0.012, 12 iterations, cost 2555599082.28, using minizinc_fw
+10. Best step size 0.007, 7 iterations, cost 2548315066.23, using minizinc_fw
+11. Best step size 0.01, 10 iterations, cost 2538302055.41, using minizinc_fw
+12. Best step size 0.004, 4 iterations, cost 2535565371.19, using minizinc_fw
+13. Best step size 0.005, 5 iterations, cost 2531175600.76, using minizinc_fw
+14. Best step size 0.006, 5 iterations, cost 2527969556.26, using minizinc_fw
+15. Best step size 0.005, 5 iterations, cost 2525551200.89, using minizinc_fw
+16. Best step size 0.003, 3 iterations, cost 2524701858.55, using minizinc_fw
+17. Best step size 0.01, 10 iterations, cost 2521106610.04, using minizinc_fw
+18. Best step size 0.003, 3 iterations, cost 2520137857.76, using minizinc_fw
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 51, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/household.py", line 161, in schedule_household
+    = household_scheduling.minizinc_model(model_file=model, solver=solver, search=search,
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/scripts/household_scheduling.py", line 71, in minizinc_model
+    result = ins.solve(timeout=timedelta(seconds=time_out))
+  File "/home/dorah/.local/lib/python3.8/site-packages/minizinc/instance.py", line 117, in solve
+    return asyncio.run(coroutine)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/home/dorah/.local/lib/python3.8/site-packages/minizinc/CLI/instance.py", line 418, in solve_async
+    async for result in self.solutions(
+  File "/home/dorah/.local/lib/python3.8/site-packages/minizinc/CLI/instance.py", line 382, in solutions
+    solution, statistics = parse_solution(
+  File "/home/dorah/.local/lib/python3.8/site-packages/minizinc/result.py", line 335, in parse_solution
+    tmp = json.loads(raw, enum_map=enum_map, cls=MZNJSONDecoder)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 6 column 1 (char 89)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./single_run.py", line 133, in <module>
+    main()
+  File "./single_run.py", line 86, in main
+    start_time_probability = new_iteration.begin_iteration(starting_prices=prices, num_cpus=64)
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/iteration.py", line 78, in begin_iteration
+    = self.community.schedule(num_iteration=num_iteration, prices=prices,
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/community.py", line 125, in schedule
+    results = self.__schedule_multiple_processing(households=households, prices=prices,
+  File "/home/dorah/.local/lib/python3.8/site-packages/fw_ddsm/community.py", line 214, in __schedule_multiple_processing
+    results = pool.starmap_async(Household.schedule_household,
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 771, in get
+    raise self._value
+json.decoder.JSONDecodeError: Extra data: line 6 column 1 (char 89)

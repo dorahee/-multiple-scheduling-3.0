@@ -1,0 +1,13 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 5000
+Argument      2: 9
+Argument      3: 1
+Argument      4: 16
+Argument      5: 1
+Argument      6: dependent_tasks
+----------------------------------------
+5000 households, 1 dependent tasks, 10 fully flexible tasks, 10 semi-flexible tasks, 0 fixed tasks, 9 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 

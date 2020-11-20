@@ -5,4 +5,4 @@
 #SBATCH --ntasks=1
 #SBATCH --mem=32768
 #SBATCH --cpus-per-task=32
-python3 ./single-run.py
+python3 ./single_run.py
