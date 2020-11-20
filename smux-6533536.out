@@ -1,5 +1,0 @@
-  PID TTY      STAT   TIME COMMAND
-29319 ?        S      0:00 /bin/bash /opt/slurm/var/spool/job6533536/slurm_script
-29322 ?        Ss     0:00 tmux new-session -d -s interactive_session bash
-29323 pts/0    Ss+    0:00 bash
-29339 ?        R      0:00 ps x

@@ -17,7 +17,7 @@
 # household == 10 cases (50, 100, 500, 1000, 2000, 4000, 6000, 8000, 10000, 15000)
 # dependent ==  4 cases (0, 3, 6, 9)
 # penalty   == 10 cases (1, 10, 50, 100, 500, 1000, 5000)
-### 10 x 4 x 10 = 400 
+# 10 x 4 x 10 = 400 
 
 ### the SLURM scheduler will feed a value to this variable
 ### ${SLURM_ARRAY_TASK_ID} will resolve to one in array 1-280
@@ -30,10 +30,13 @@ PARAMS=`tail -1 PLIST`
 module purge
 module load python/3.8.5-gcc8
 
+### activate the virtual environment
+source ~/td70/py385/bin/activate
+
 # SLURM_CPUS_PER_TASK will get the value from --cpus-per-task
-#python3 ./monarch_run.py ${PARAMS} ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "dependent_tasks"
+python3 ./monarch_run.py ${PARAMS} ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "dependent_tasks"
 
 # this causes an exception: check slurm-6533514_5.out
-python3 ./monarch_run.py 100 6 1 ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "dependent_tasks"
+#python3 ./monarch_run.py 50 6 1 ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "dependent_tasks"
 
 
