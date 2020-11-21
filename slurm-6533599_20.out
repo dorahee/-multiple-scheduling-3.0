@@ -1,0 +1,55 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 5000
+Argument      2: 9
+Argument      3: 1
+Argument      4: 16
+Argument      5: 20
+Argument      6: dependent_tasks
+----------------------------------------
+5000 households, 1 dependent tasks, 10 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 9 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.013, 13 iterations, cost 2852774827.63, using minizinc_fw
+2. Best step size 0.012, 12 iterations, cost 2784144696.78, using minizinc_fw
+3. Best step size 0.01, 10 iterations, cost 2738485283.06, using minizinc_fw
+4. Best step size 0.008, 8 iterations, cost 2713579922.36, using minizinc_fw
+5. Best step size 0.008, 8 iterations, cost 2692950993.47, using minizinc_fw
+6. Best step size 0.009, 9 iterations, cost 2682231145.82, using minizinc_fw
+7. Best step size 0.004, 4 iterations, cost 2674240513.64, using minizinc_fw
+8. Best step size 0.006, 6 iterations, cost 2666029460.12, using minizinc_fw
+9. Best step size 0.008, 8 iterations, cost 2654308876.24, using minizinc_fw
+10. Best step size 0.005, 5 iterations, cost 2645270145.98, using minizinc_fw
+11. Best step size 0.004, 4 iterations, cost 2640654362.65, using minizinc_fw
+12. Best step size 0.005, 5 iterations, cost 2635179516.83, using minizinc_fw
+13. Best step size 0.004, 4 iterations, cost 2632742399.11, using minizinc_fw
+14. Best step size 0, 0 iterations, cost 2632742399.11, using minizinc_fw
+Converged in 14
+Data are written and graphs are painted. 
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.011, 11 iterations, cost 2862907026.33, using ogsa_fw
+2. Best step size 0.01, 10 iterations, cost 2802113338.72, using ogsa_fw
+3. Best step size 0.009, 9 iterations, cost 2752183462.01, using ogsa_fw
+4. Best step size 0.007, 7 iterations, cost 2721355206.63, using ogsa_fw
+5. Best step size 0.009, 9 iterations, cost 2686700600.06, using ogsa_fw
+6. Best step size 0.009, 9 iterations, cost 2658114124.23, using ogsa_fw
+7. Best step size 0.006, 6 iterations, cost 2642201166.37, using ogsa_fw
+8. Best step size 0.003, 3 iterations, cost 2634481933.78, using ogsa_fw
+9. Best step size 0.005, 5 iterations, cost 2624631952.15, using ogsa_fw
+10. Best step size 0.005, 5 iterations, cost 2616296405.77, using ogsa_fw
+11. Best step size 0.004, 4 iterations, cost 2610393690.7, using ogsa_fw
+12. Best step size 0.003, 3 iterations, cost 2606141264.79, using ogsa_fw
+13. Best step size 0.005, 5 iterations, cost 2599284878.9, using ogsa_fw
+14. Best step size 0.002, 2 iterations, cost 2596518474.44, using ogsa_fw
+15. Best step size 0.009, 9 iterations, cost 2588540653.56, using ogsa_fw
+16. Best step size 0.002, 2 iterations, cost 2587374704.21, using ogsa_fw
+17. Best step size 0.001, 1 iterations, cost 2586638638.22, using ogsa_fw
+18. Best step size 0, 0 iterations, cost 2586638638.22, using ogsa_fw
+Converged in 18
+Data are written and graphs are painted. 
+----------------------------------------
+----------------------------------------
+Experiment is finished. 
+{0: {'no_households': 5000, 'penalty_weight': 9, 'no_dependent_tasks': 1, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 20, 'init_PAR': 1.18, 'PAR': 1.11, 'init_max_demand': 3936738.0, 'max_demand': 3721859.03, 'total_demand': 160402223.0, 'demand_reduction': 0.05, 'cost_reduction': 0.1, 'pricing_time': 0.021886666666666665, 'rescheduling_time': 5091.173333333331}, 1: {'no_households': 5000, 'penalty_weight': 9, 'no_dependent_tasks': 1, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 20, 'init_PAR': 1.18, 'PAR': 1.07, 'init_max_demand': 3936738.0, 'max_demand': 3562821.4, 'total_demand': 160402223.0, 'demand_reduction': 0.09, 'cost_reduction': 0.12, 'pricing_time': 0.007021052631578949, 'rescheduling_time': 4.295552631578948}}

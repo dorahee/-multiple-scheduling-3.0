@@ -1,0 +1,58 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 5000
+Argument      2: 3
+Argument      3: 1
+Argument      4: 16
+Argument      5: 8
+Argument      6: dependent_tasks
+----------------------------------------
+5000 households, 1 dependent tasks, 10 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 3 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.012, 12 iterations, cost 2726433076.04, using minizinc_fw
+2. Best step size 0.011, 11 iterations, cost 2681809205.75, using minizinc_fw
+3. Best step size 0.008, 8 iterations, cost 2653205030.02, using minizinc_fw
+4. Best step size 0.006, 6 iterations, cost 2639586683.67, using minizinc_fw
+5. Best step size 0.011, 10 iterations, cost 2615220708.83, using minizinc_fw
+6. Best step size 0.01, 10 iterations, cost 2595847563.16, using minizinc_fw
+7. Best step size 0.004, 4 iterations, cost 2588283261.94, using minizinc_fw
+8. Best step size 0.009, 8 iterations, cost 2578164811.77, using minizinc_fw
+9. Best step size 0.006, 6 iterations, cost 2572485101.36, using minizinc_fw
+10. Best step size 0.003, 3 iterations, cost 2570893980.43, using minizinc_fw
+11. Best step size 0.005, 5 iterations, cost 2565192489.0, using minizinc_fw
+12. Best step size 0, 0 iterations, cost 2565192489.0, using minizinc_fw
+Converged in 12
+Data are written and graphs are painted. 
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.01, 10 iterations, cost 2735912813.12, using ogsa_fw
+2. Best step size 0.017, 17 iterations, cost 2667042877.58, using ogsa_fw
+3. Best step size 0.011, 11 iterations, cost 2633292603.21, using ogsa_fw
+4. Best step size 0.011, 11 iterations, cost 2604126322.18, using ogsa_fw
+5. Best step size 0.006, 6 iterations, cost 2591545845.71, using ogsa_fw
+6. Best step size 0.006, 6 iterations, cost 2579878724.09, using ogsa_fw
+7. Best step size 0.008, 8 iterations, cost 2567325567.92, using ogsa_fw
+8. Best step size 0.005, 5 iterations, cost 2559355224.48, using ogsa_fw
+9. Best step size 0.005, 5 iterations, cost 2553184957.36, using ogsa_fw
+10. Best step size 0.007, 7 iterations, cost 2544273627.36, using ogsa_fw
+11. Best step size 0.005, 5 iterations, cost 2539757324.56, using ogsa_fw
+12. Best step size 0.003, 3 iterations, cost 2536951577.48, using ogsa_fw
+13. Best step size 0.003, 3 iterations, cost 2534511051.88, using ogsa_fw
+14. Best step size 0.004, 4 iterations, cost 2531771039.6, using ogsa_fw
+15. Best step size 0.003, 3 iterations, cost 2529738837.34, using ogsa_fw
+16. Best step size 0.002, 2 iterations, cost 2528171396.49, using ogsa_fw
+17. Best step size 0.001, 1 iterations, cost 2527409506.75, using ogsa_fw
+18. Best step size 0.006, 6 iterations, cost 2524796605.93, using ogsa_fw
+19. Best step size 0.003, 3 iterations, cost 2523441067.32, using ogsa_fw
+20. Best step size 0.001, 1 iterations, cost 2522834459.96, using ogsa_fw
+21. Best step size 0.002, 2 iterations, cost 2521993362.79, using ogsa_fw
+22. Best step size 0.001, 1 iterations, cost 2521598035.91, using ogsa_fw
+23. Best step size 0, 0 iterations, cost 2521598035.91, using ogsa_fw
+Converged in 23
+Data are written and graphs are painted. 
+----------------------------------------
+----------------------------------------
+Experiment is finished. 
+{0: {'no_households': 5000, 'penalty_weight': 3, 'no_dependent_tasks': 1, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 8, 'init_PAR': 1.21, 'PAR': 1.11, 'init_max_demand': 4078469.0, 'max_demand': 3745957.28, 'total_demand': 161908054.0, 'demand_reduction': 0.08, 'cost_reduction': 0.08, 'pricing_time': 0.022061538461538466, 'rescheduling_time': 4080.291538461539}, 1: {'no_households': 5000, 'penalty_weight': 3, 'no_dependent_tasks': 1, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 8, 'init_PAR': 1.21, 'PAR': 1.07, 'init_max_demand': 4078469.0, 'max_demand': 3617862.06, 'total_demand': 161908054.0, 'demand_reduction': 0.11, 'cost_reduction': 0.1, 'pricing_time': 0.005916666666666667, 'rescheduling_time': 4.37545}}

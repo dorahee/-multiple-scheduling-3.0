@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1
 #SBATCH --mem=32768
 #SBATCH --cpus-per-task=16
-#SBATCH --array=1-1
+#SBATCH --array=1-20
 #SBATCH --mail-type=ALL,ARRAY_TASKS
 #SBATCH --mail-user=dora.he3@monash.edu
 
@@ -24,7 +24,7 @@
 ### extract the line corresponding to ${SLURM_ARRAY_TASKID} and store into PARAMS
 
 PARAMS=`head -n ${SLURM_ARRAY_TASK_ID} PLIST | tail -1`
-PARAMS=`tail -1 PLIST`
+# PARAMS=`tail -1 PLIST`
 
 ### load the module
 module purge
