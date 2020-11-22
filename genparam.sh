@@ -8,7 +8,7 @@
 # dependent ==  4 cases (0, 3, 6, 9)
 # penalty   == 5 cases (1, 1, 1, 1, 1)
 
-for h in 5000
+for h in 2000
 do
   for p in 1 1 1 1 1
   do

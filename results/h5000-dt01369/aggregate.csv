@@ -1,0 +1,11 @@
+no_dependent_tasks,algorithm,PAR,demand_reduction,cost_reduction
+0,minizinc_fw,1.11,0.076666667,0.1
+0,ogsa_fw,1.05,0.12,0.126666667
+1,minizinc_fw,1.13,0.06,0.0925
+1,ogsa_fw,1.06,0.12,0.115
+3,minizinc_fw,1.12,0.0725,0.095
+3,ogsa_fw,1.04,0.135,0.12
+6,minizinc_fw,1.12,0.078,0.098
+6,ogsa_fw,1.04,0.142,0.118
+9,minizinc_fw,1.12,0.0675,0.1025
+9,ogsa_fw,1.03,0.1425,0.1225
