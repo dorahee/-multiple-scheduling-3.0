@@ -12,7 +12,7 @@ for h in 5000
 do
   for p in 1 1 1 1 1
   do
-     for d in 0 3 6 9
+     for d in 0 1 3 6 9
      do
         echo "$h $p $d"
      done

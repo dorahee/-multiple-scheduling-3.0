@@ -16,7 +16,7 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 # num_tasks_dependent_range = [0, 3, 5]
 num_households_range = [5000]
 penalty_weight_range = [1]
-num_tasks_dependent_range = [1, 3, 6, 9]
+num_tasks_dependent_range = [0, 1, 3, 6, 9]
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
@@ -25,6 +25,7 @@ num_repeat = 1
 name_exp = "dependent"
 id_job = 2
 cpus_nums = cpu_count()
+ensure_dependent = True
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, num_cpus=None, experiment_name=None, job_id=0):
@@ -68,8 +69,8 @@ def main(num_households, num_tasks_dependent, penalty_weight, num_cpus=None, exp
         if new_data:
             preferred_demand_profile, prices = \
                 new_iteration.new(algorithm=alg, num_households=num_households,
-                                  max_demand_multiplier=maxium_demand_multiplier,
-                                  num_tasks_dependent=num_tasks_dependent,
+                                  max_demand_multiplier=maximum_demand_multiplier,
+                                  num_tasks_dependent=num_tasks_dependent, ensure_dependent=ensure_dependent,
                                   full_flex_task_min=num_full_flex_tasks, full_flex_task_max=0,
                                   semi_flex_task_min=num_semi_flex_tasks, semi_flex_task_max=0,
                                   fixed_task_min=num_fixed_tasks, fixed_task_max=0,
@@ -81,7 +82,7 @@ def main(num_households, num_tasks_dependent, penalty_weight, num_cpus=None, exp
         else:
             preferred_demand_profile, prices = \
                 new_iteration.read(algorithm=alg, inconvenience_cost_weight=penalty_weight,
-                                   num_dependent_tasks=num_tasks_dependent,
+                                   num_dependent_tasks=num_tasks_dependent, ensure_dependent=ensure_dependent,
                                    read_from_folder=output_parent_folder,
                                    date_time=this_date_time)
 
