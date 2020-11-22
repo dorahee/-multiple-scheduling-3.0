@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=fw-ddsm
+#SBATCH --job-name=dora-fw-ddsm
 #SBATCH --partition=short
 #SBATCH --time=1-
 #SBATCH --ntasks=1
