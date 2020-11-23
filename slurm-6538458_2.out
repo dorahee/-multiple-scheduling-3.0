@@ -1,0 +1,66 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 5000
+Argument      2: 1
+Argument      3: 1
+Argument      4: 16
+Argument      5: 2
+Argument      6: dependent
+----------------------------------------
+5000 households, 1 h1000-sft10-dt039-r1 tasks, 0 fully flexible tasks, 10 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.039, 39 iterations, cost 2752923042.23, using minizinc_fw
+2. Best step size 0.02, 18 iterations, cost 2710417696.33, using minizinc_fw
+3. Best step size 0.035, 33 iterations, cost 2635812798.62, using minizinc_fw
+4. Best step size 0.02, 18 iterations, cost 2609923554.74, using minizinc_fw
+5. Best step size 0.013, 12 iterations, cost 2598846554.39, using minizinc_fw
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 51, in starmapstar
+    return list(itertools.starmap(args[0], args[1]))
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/fw_ddsm/household.py", line 161, in schedule_household
+    = household_scheduling.minizinc_model(model_file=model, solver=solver, search=search,
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/fw_ddsm/scripts/household_scheduling.py", line 71, in minizinc_model
+    result = ins.solve(timeout=timedelta(seconds=time_out))
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/minizinc/instance.py", line 117, in solve
+    return asyncio.run(coroutine)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/minizinc/CLI/instance.py", line 418, in solve_async
+    async for result in self.solutions(
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/minizinc/CLI/instance.py", line 382, in solutions
+    solution, statistics = parse_solution(
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/minizinc/result.py", line 335, in parse_solution
+    tmp = json.loads(raw, enum_map=enum_map, cls=MZNJSONDecoder)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/json/__init__.py", line 370, in loads
+    return cls(**kw).decode(s)
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 6 column 1 (char 93)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "./monarch_run.py", line 149, in <module>
+    main(num_households=h,
+  File "./monarch_run.py", line 90, in main
+    start_time_probability = new_iteration.begin_iteration(starting_prices=prices, num_cpus=num_cpus)
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/fw_ddsm/iteration.py", line 80, in begin_iteration
+    = self.community.schedule(num_iteration=num_iteration, prices=prices,
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/fw_ddsm/community.py", line 127, in schedule
+    results = self.__schedule_multiple_processing(households=households, prices=prices,
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/fw_ddsm/community.py", line 218, in __schedule_multiple_processing
+    results = pool.starmap(Household.schedule_household,
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 372, in starmap
+    return self._map_async(func, iterable, starmapstar, chunksize).get()
+  File "/usr/local/python/3.8.5-gcc8/lib/python3.8/multiprocessing/pool.py", line 771, in get
+    raise self._value
+json.decoder.JSONDecodeError: Extra data: line 6 column 1 (char 93)

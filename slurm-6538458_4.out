@@ -1,0 +1,22 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 5000
+Argument      2: 1
+Argument      3: 6
+Argument      4: 16
+Argument      5: 4
+Argument      6: dependent
+----------------------------------------
+5000 households, 6 h1000-sft10-dt039-r1 tasks, 0 fully flexible tasks, 10 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.034, 32 iterations, cost 2720439914.77, using minizinc_fw
+2. Best step size 0.05, 48 iterations, cost 2587817433.87, using minizinc_fw
+3. Best step size 0.029, 26 iterations, cost 2544774416.3, using minizinc_fw
+4. Best step size 0.014, 13 iterations, cost 2534930401.46, using minizinc_fw
+5. Best step size 0.017, 16 iterations, cost 2523150813.7, using minizinc_fw
+6. Best step size 0.006, 6 iterations, cost 2520807601.61, using minizinc_fw
+7. Best step size 0.009, 9 iterations, cost 2517782299.48, using minizinc_fw
+8. Best step size 0.01, 9 iterations, cost 2515584481.84, using minizinc_fw
+slurmstepd: error: *** JOB 6538476 ON mk02 CANCELLED AT 2020-11-23T19:51:24 ***

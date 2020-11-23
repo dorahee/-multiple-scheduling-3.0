@@ -1,0 +1,33 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 1000
+Argument      2: 1
+Argument      3: 0
+Argument      4: 16
+Argument      5: 1
+Argument      6: dependent
+----------------------------------------
+1000 households, 0 dependent tasks, 0 fully flexible tasks, 10 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.051, 49 iterations, cost 507034445.54, using minizinc_fw
+2. Best step size 0.045, 42 iterations, cost 494261564.11, using minizinc_fw
+3. Best step size 0.035, 32 iterations, cost 488752698.24, using minizinc_fw
+4. Best step size 0.023, 22 iterations, cost 486655175.61, using minizinc_fw
+5. Best step size 0, 0 iterations, cost 486655175.61, using minizinc_fw
+Converged in 5
+Traceback (most recent call last):
+  File "./monarch_run.py", line 149, in <module>
+    main(num_households=h,
+  File "./monarch_run.py", line 98, in main
+    = out.save_to_output_folder(algorithm=alg,
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/fw_ddsm/output.py", line 146, in save_to_output_folder
+    df_demands.to_csv(r"{}{}_aggregator_demands.csv".format(self.output_folder, pricing_method))
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/pandas/core/generic.py", line 3170, in to_csv
+    formatter.save()
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/pandas/io/formats/csvs.py", line 185, in save
+    f, handles = get_handle(
+  File "/mnt/lustre/projects/td70/py385/lib/python3.8/site-packages/pandas/io/common.py", line 493, in get_handle
+    f = open(path_or_buf, mode, encoding=encoding, errors=errors, newline="")
+FileNotFoundError: [Errno 2] No such file or directory: 'results/dependent//h1000-w1-dt0-fft0-sft10-id1//minizinc_fw_aggregator_demands.csv'

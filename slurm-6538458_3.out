@@ -1,0 +1,22 @@
+Arguments count: 7
+Argument      0: ./monarch_run.py
+Argument      1: 5000
+Argument      2: 1
+Argument      3: 3
+Argument      4: 16
+Argument      5: 3
+Argument      6: dependent
+----------------------------------------
+5000 households, 3 h1000-sft10-dt039-r1 tasks, 0 fully flexible tasks, 10 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is created. 
+0. Aggregator is created. 
+1. Best step size 0.035, 33 iterations, cost 2669674670.73, using minizinc_fw
+2. Best step size 0.021, 21 iterations, cost 2626484125.96, using minizinc_fw
+3. Best step size 0.031, 30 iterations, cost 2578613697.04, using minizinc_fw
+4. Best step size 0.016, 15 iterations, cost 2562614407.3, using minizinc_fw
+slurmstepd: error: _is_a_lwp: open() /proc/43300/status failed: No such file or directory
+5. Best step size 0.008, 8 iterations, cost 2558409709.99, using minizinc_fw
+6. Best step size 0.013, 10 iterations, cost 2553164353.82, using minizinc_fw
+7. Best step size 0.004, 4 iterations, cost 2551700024.54, using minizinc_fw
+slurmstepd: error: *** JOB 6538461 ON mk01 CANCELLED AT 2020-11-23T19:51:24 ***
