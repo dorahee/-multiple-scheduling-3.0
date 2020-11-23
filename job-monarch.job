@@ -6,6 +6,7 @@
 #SBATCH --ntasks=1
 #SBATCH --mem=32768
 #SBATCH --cpus-per-task=16
+#SBATCH --array=1-5
 #SBATCH --mail-type=ALL,ARRAY_TASKS
 #SBATCH --mail-user=dora.he3@monash.edu
 
@@ -13,9 +14,7 @@
 #SBATCH --qos=partner
 
 ### update the upperbound in array to the wc -l PLIST
-ALEN=`wc -l PLIST | awk '{print $1}'`
-###SBATCH --array=1-25
-#SBATCH --array=1-${ALEN}
+
 
 ### the SLURM scheduler will feed a value to this variable
 ### ${SLURM_ARRAY_TASK_ID} will resolve to one in array 1-280
