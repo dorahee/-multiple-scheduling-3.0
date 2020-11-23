@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fa0ef66-11ba-463e-b9de-2e16f4819ef8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PLIST" beforeDir="false" afterPath="$PROJECT_DIR$/PLIST" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genparam.sh" beforeDir="false" afterPath="$PROJECT_DIR$/genparam.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monarch.job" beforeDir="false" afterPath="$PROJECT_DIR$/job-monarch.job" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monarch_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run-monarch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-04-22_community.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-04-22_pricing_table.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-05-24_community.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-05-24_pricing_table.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-05-25_community.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-05-25_pricing_table.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-23-21_community.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-23-21_pricing_table.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-34-11_community.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-34-11_pricing_table.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-38-39_community.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_18-38-39_pricing_table.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_19-32-18_community.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/dependent/data/2020-11-23_19-32-18_pricing_table.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/h5000-fft10-dt01369-r5/combined_overview.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/h5000-fft10-dt01369-r5/combined_overview.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/h5000-fft10-dt0369-r3/overview_all_tests.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results/h5000-fft10-dt0369-r3/overview_all_tests.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single.job" beforeDir="false" afterPath="$PROJECT_DIR$/archived/single.job" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/archived/single_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538453_1.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538453_2.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538453_3.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538458_1.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538458_2.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538458_3.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538458_4.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538458_5.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538458_6.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538458_7.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/job-monarch.job" beforeDir="false" afterPath="$PROJECT_DIR$/job-monarch.job" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,26 +24,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/job-monarch.job">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PLIST">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/genparam.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="216">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -138,11 +88,6 @@
               <item name="multiple-scheduling-3.0" type="b2602c69:ProjectViewProjectNode" />
               <item name="multiple-scheduling-3.0" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="multiple-scheduling-3.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="multiple-scheduling-3.0" type="462c0819:PsiDirectoryNode" />
-              <item name="archived" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -169,6 +114,7 @@
       <recent name="$PROJECT_DIR$/results/dependent_tasks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/archived" />
       <recent name="$PROJECT_DIR$/important" />
       <recent name="$PROJECT_DIR$/data" />
@@ -330,12 +276,12 @@
       <workItem from="1605970334620" duration="1776000" />
       <workItem from="1606015566371" duration="2620000" />
       <workItem from="1606050298931" duration="4297000" />
-      <workItem from="1606110438444" duration="4417000" />
+      <workItem from="1606110438444" duration="4673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59947000" />
+    <option name="totallyTimeSpent" value="60203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1364" extended-state="6" />
@@ -345,8 +291,8 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32983023" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2700081" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32983023" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2700081" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39854488" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -454,7 +400,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/slurm-6531948.out" />
     <entry file="file://$PROJECT_DIR$/archived/single.job">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -608,7 +553,7 @@
         <state relative-caret-position="-199" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
+    <entry file="file://$PROJECT_DIR$/docs/LICENSE">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/run-monarch.py">
@@ -642,10 +587,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/archived/PLIST">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/job-monarch.job">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="216">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
