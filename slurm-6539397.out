@@ -5,3 +5,4 @@ Argument      0: ./run-monarch.py
 ----------------------------------------
 0. The community is created. 
 0. Aggregator is created. 
+slurmstepd: error: *** JOB 6539397 ON mk00 CANCELLED AT 2020-11-24T04:23:34 ***
