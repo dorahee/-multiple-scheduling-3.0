@@ -27,7 +27,9 @@ id_job = 0
 cpus_nums = cpu_count()
 ensure_dependent = True
 experiment_tracker = dict()
-timeout = 600
+timeout = None
+min_step_size=0.0001
+ignore_tiny_step = True
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
@@ -82,6 +84,7 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
         else:
             if m_ogsa in alg:
                 num_tasks_dependent = None
+                penalty_weight = None
             preferred_demand_profile, prices = \
                 new_iteration.read(algorithm=alg, inconvenience_cost_weight=penalty_weight,
                                    new_dependent_tasks=num_tasks_dependent,
@@ -91,7 +94,9 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
 
         # 2. iteration begins
         start_time_probability = new_iteration.begin_iteration(starting_prices=prices, num_cpus=num_cpus,
-                                                               timeout=timeout)
+                                                               timeout=timeout,
+                                                               min_step_size=min_step_size,
+                                                               ignore_tiny_step=ignore_tiny_step)
 
         # 3. finalising schedules
         new_iteration.finalise_schedules(num_samples=num_samples,
