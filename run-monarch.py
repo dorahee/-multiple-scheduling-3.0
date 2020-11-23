@@ -27,7 +27,7 @@ id_job = 0
 cpus_nums = cpu_count()
 ensure_dependent = True
 experiment_tracker = dict()
-timeout = 60
+timeout = 600
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
