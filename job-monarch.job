@@ -31,5 +31,5 @@ module load python/3.8.5-gcc8
 source ~/td70/py385/bin/activate
 
 # SLURM_CPUS_PER_TASK will get the value from --cpus-per-task
-python3 ./monarch_run.py ${PARAMS} ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "dependent"
+python3 ./run-monarch.py ${PARAMS} ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "exp"
 
