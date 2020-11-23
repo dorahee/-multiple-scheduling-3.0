@@ -14,7 +14,7 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [1000]
+num_households_range = [10]
 penalty_weight_range = [1]
 num_tasks_dependent_range = [0, 1, 3, 6, 9]
 num_full_flex_tasks = 10
@@ -115,8 +115,9 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
     save(layout([div], [Tabs(tabs=[tab2, tab1])]))
 
     # 6. writing experiment overview
-    DataFrame.from_dict(experiment_tracker).transpose() \
-        .to_csv(r"{}{}_overview.csv".format(output_parent_folder, this_date_time))
+    df_exp = DataFrame.from_dict(experiment_tracker).transpose()
+    df_exp[s_obj] = df_exp[s_penalty] + df_exp[p_cost]
+    df_exp.to_csv(r"{}{}_overview.csv".format(output_parent_folder, this_date_time))
     with open(f"{out.output_parent_folder}data/{this_date_time}_{file_experiment_pkl}",
               'wb+') as f:
         pickle.dump(experiment_tracker, f, pickle.HIGHEST_PROTOCOL)
