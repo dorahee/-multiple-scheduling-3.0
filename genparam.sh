@@ -8,11 +8,11 @@
 # dependent ==  4 cases (0, 3, 6, 9)
 # penalty   == 5 cases (1, 1, 1, 1, 1)
 
-for h in 2000
+for h in 1000
 do
-  for p in 1 1 1 1 1
+  for p in 1
   do
-     for d in 0 1 3 6 9
+     for d in 0 3 9
      do
         echo "$h $p $d"
      done

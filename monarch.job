@@ -6,7 +6,7 @@
 #SBATCH --ntasks=1
 #SBATCH --mem=32768
 #SBATCH --cpus-per-task=16
-#SBATCH --array=1-25
+#SBATCH --array=1-3
 #SBATCH --mail-type=ALL,ARRAY_TASKS
 #SBATCH --mail-user=dora.he3@monash.edu
 
@@ -34,7 +34,7 @@ module load python/3.8.5-gcc8
 source ~/td70/py385/bin/activate
 
 # SLURM_CPUS_PER_TASK will get the value from --cpus-per-task
-python3 ./monarch_run.py ${PARAMS} ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "dependent_tasks"
+python3 ./monarch_run.py ${PARAMS} ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "dependent"
 
 # this causes an exception: check slurm-6533514_5.out
 #python3 ./monarch_run.py 50 6 1 ${SLURM_CPUS_PER_TASK} ${SLURM_ARRAY_TASK_ID} "dependent_tasks"
