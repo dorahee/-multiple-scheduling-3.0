@@ -116,7 +116,7 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
 
     # 6. writing experiment overview
     df_exp = DataFrame.from_dict(experiment_tracker).transpose()
-    df_exp[s_obj] = df_exp[s_penalty] + df_exp[p_cost]
+    # df_exp[s_obj] = df_exp[s_penalty] + df_exp[p_cost]
     df_exp.to_csv(r"{}{}_overview.csv".format(output_parent_folder, this_date_time))
     with open(f"{out.output_parent_folder}data/{this_date_time}_{file_experiment_pkl}",
               'wb+') as f:
