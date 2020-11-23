@@ -14,9 +14,9 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [50]
+num_households_range = [1000]
 penalty_weight_range = [1]
-num_tasks_dependent_range = [0, 1, 3, 5, 7]
+num_tasks_dependent_range = [0, 1, 3, 6, 9]
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
@@ -30,15 +30,15 @@ experiment_tracker = dict()
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
-
-    num_experiment = -1
+    num_experiment = 0
     print("----------------------------------------")
-    print(f"{num_households} households, "
-          f"{num_tasks_dependent} dependent tasks, "
-          f"{num_full_flex_tasks} fully flexible tasks, "
-          f"{num_semi_flex_tasks} semi-flexible tasks, "
-          f"{num_fixed_tasks} fixed tasks, "
-          f"{penalty_weight} penalty weight. ")
+    param_str = f"{num_households} households, " \
+        f"{num_tasks_dependent} dependent tasks, " \
+        f"{num_full_flex_tasks} fully flexible tasks, " \
+        f"{num_semi_flex_tasks} semi-flexible tasks, " \
+        f"{num_fixed_tasks} fixed tasks, " \
+        f"{penalty_weight} penalty weight. "
+    print(param_str)
     print("----------------------------------------")
 
     new_iteration = Iteration()
@@ -52,7 +52,8 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
     plots_demand_layout = []
     plots_demand_finalised_layout = []
     for alg in algorithms.values():
-        num_experiment += 1
+        while num_experiment in experiment_tracker:
+            num_experiment += 1
         experiment_tracker[num_experiment] = dict()
         experiment_tracker[num_experiment][k_households_no] = num_households
         experiment_tracker[num_experiment][k_penalty_weight] = penalty_weight
@@ -106,10 +107,12 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
         experiment_tracker[num_experiment].update(overview_dict)
 
     # 5. drawing all plots
+    print("----------------------------------------")
     output_file(f"{output_folder}{this_date_time}_plots.html")
     tab1 = Panel(child=layout(plots_demand_layout), title="FW-DDSM results")
     tab2 = Panel(child=layout(plots_demand_finalised_layout), title="Actual schedules")
-    save(Tabs(tabs=[tab2, tab1]))
+    div = Div(text=f"""{param_str}""", width=800)
+    save(layout([div], [Tabs(tabs=[tab2, tab1])]))
 
     # 6. writing experiment overview
     DataFrame.from_dict(experiment_tracker).transpose() \

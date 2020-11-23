@@ -2,12 +2,83 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fa0ef66-11ba-463e-b9de-2e16f4819ef8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/job-single.job" beforeDir="false" afterPath="$PROJECT_DIR$/job-single.job" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538795_1.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538795_2.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538795_3.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538795_4.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/slurm-6538795_5.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/2020-11-24_00-44-37_overview.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/data/2020-11-24_00-44-37_community.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/data/2020-11-24_00-44-37_experiment.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/data/2020-11-24_00-44-37_pricing_table.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/2020-11-24_00-44-37_plots.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/aggregator_overview.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/minizinc_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/minizinc_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/minizinc_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/minizinc_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/minizinc_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/minizinc_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/ogsa_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/ogsa_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/ogsa_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/ogsa_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/ogsa_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt0-fft10-sft0-id0/ogsa_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/2020-11-24_00-44-37_plots.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/aggregator_overview.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/minizinc_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/minizinc_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/minizinc_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/minizinc_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/minizinc_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/minizinc_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/ogsa_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/ogsa_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/ogsa_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/ogsa_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/ogsa_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt1-fft10-sft0-id0/ogsa_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/2020-11-24_00-44-37_plots.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/aggregator_overview.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/minizinc_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/minizinc_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/minizinc_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/minizinc_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/minizinc_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/minizinc_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/ogsa_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/ogsa_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/ogsa_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/ogsa_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/ogsa_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt3-fft10-sft0-id0/ogsa_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/2020-11-24_00-44-37_plots.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/aggregator_overview.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/minizinc_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/minizinc_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/minizinc_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/minizinc_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/minizinc_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/minizinc_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/ogsa_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/ogsa_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/ogsa_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/ogsa_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/ogsa_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt5-fft10-sft0-id0/ogsa_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/2020-11-24_00-44-37_plots.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/aggregator_overview.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/minizinc_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/minizinc_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/minizinc_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/minizinc_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/minizinc_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/minizinc_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/ogsa_fw_aggregator_demands.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/ogsa_fw_aggregator_demands_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/ogsa_fw_aggregator_others.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/ogsa_fw_aggregator_others_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/ogsa_fw_aggregator_prices.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/exp/h50-w1-dt7-fft10-sft0-id0/ogsa_fw_aggregator_prices_final.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-monarch.py" beforeDir="false" afterPath="$PROJECT_DIR$/run-monarch.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,25 +101,25 @@
         <entry file="file://$PROJECT_DIR$/job-monarch.job">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="638">
-              <caret line="32" column="39" lean-forward="true" selection-end-line="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/job-single.job">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <caret line="32" column="39" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job-single.job">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run-monarch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            <state relative-caret-position="594">
+              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -68,7 +139,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../py37/lib/python3.7/site-packages/fw_ddsm/community.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
+            <state relative-caret-position="4590">
               <caret line="175" selection-start-line="175" selection-end-line="175" />
             </state>
           </provider>
@@ -110,8 +181,8 @@
         <option value="$PROJECT_DIR$/genparam.sh" />
         <option value="$PROJECT_DIR$/job-monarch.job" />
         <option value="$PROJECT_DIR$/run-single.py" />
-        <option value="$PROJECT_DIR$/run-monarch.py" />
         <option value="$PROJECT_DIR$/job-single.job" />
+        <option value="$PROJECT_DIR$/run-monarch.py" />
       </list>
     </option>
   </component>
@@ -334,15 +405,16 @@
       <workItem from="1605970334620" duration="1776000" />
       <workItem from="1606015566371" duration="2620000" />
       <workItem from="1606050298931" duration="4297000" />
-      <workItem from="1606110438444" duration="15595000" />
+      <workItem from="1606110438444" duration="17290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71125000" />
+    <option name="totallyTimeSpent" value="72820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="2560" height="1364" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20773524" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -635,17 +707,24 @@
     <entry file="file://$PROJECT_DIR$/results/exp/h50-w1-dt3-fft0-sft10-id0/2020-11-23_21-11-38_plots.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../py37/lib/python3.7/site-packages/fw_ddsm/community.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/results/exp/2020-11-23_22-26-21_overview.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job-monarch.job">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="32" column="39" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job-single.job">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../py37/lib/python3.7/site-packages/fw_ddsm/iteration.py">
@@ -655,27 +734,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../py37/lib/python3.7/site-packages/fw_ddsm/community.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4590">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run-monarch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="594">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job-monarch.job">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="32" column="39" lean-forward="true" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/job-single.job">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
     </entry>
