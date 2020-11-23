@@ -70,3 +70,5 @@ Experiment is finished.
 0. Aggregator is read. 
 1. Best step size 0.015, 15 iterations, cost 2934959605.48, using minizinc_fw
 2. Best step size 0.027, 27 iterations, cost 2798202398.3, using minizinc_fw
+3. Best step size 0.012, 12 iterations, cost 2752258371.28, using minizinc_fw
+slurmstepd: error: *** JOB 6539400 ON mk00 CANCELLED AT 2020-11-24T05:51:59 ***
