@@ -22,7 +22,7 @@ num_semi_flex_tasks = 10
 num_fixed_tasks = 0
 num_samples = 5
 num_repeat = 1
-name_exp = "dependent"
+name_exp = "h1000-sft10-dt039-r1"
 id_job = 2
 cpus_nums = cpu_count()
 ensure_dependent = True
@@ -35,7 +35,7 @@ def main(num_households, num_tasks_dependent, penalty_weight, num_cpus=None, exp
 
     print("----------------------------------------")
     print(f"{num_households} households, "
-          f"{num_tasks_dependent} dependent tasks, "
+          f"{num_tasks_dependent} h1000-sft10-dt039-r1 tasks, "
           f"{num_full_flex_tasks} fully flexible tasks, "
           f"{num_semi_flex_tasks} semi-flexible tasks, "
           f"{num_fixed_tasks} fixed tasks, "

@@ -125,7 +125,7 @@ def main():
 
     # time and reductions per number of household
     # time and reduction per care factors (same number of households)
-    # time and reduction per number of dependent tasks (same number of households and same care factor)
+    # time and reduction per number of h1000-sft10-dt039-r1 tasks (same number of households and same care factor)
 
 
 if __name__ == '__main__':
