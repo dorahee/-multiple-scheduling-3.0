@@ -27,6 +27,7 @@ id_job = 0
 cpus_nums = cpu_count()
 ensure_dependent = True
 experiment_tracker = dict()
+timeout = 60
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
@@ -89,7 +90,8 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                                    date_time=this_date_time)
 
         # 2. iteration begins
-        start_time_probability = new_iteration.begin_iteration(starting_prices=prices, num_cpus=num_cpus)
+        start_time_probability = new_iteration.begin_iteration(starting_prices=prices, num_cpus=num_cpus,
+                                                               timeout=timeout)
 
         # 3. finalising schedules
         new_iteration.finalise_schedules(num_samples=num_samples,
