@@ -187,3 +187,36 @@ Experiment is finished.
 ----------------------------------------
 0. The community is read. 
 0. Aggregator is read. 
+1. Best step size 0.016, 16 iterations, cost 3022918326.8, using minizinc_fw
+2. Best step size 0.014, 14 iterations, cost 2930421921.05, using minizinc_fw
+3. Best step size 0.017, 17 iterations, cost 2847555607.57, using minizinc_fw
+4. Best step size 0.005, 5 iterations, cost 2834415455.72, using minizinc_fw
+5. Best step size 0, 0 iterations, cost 2834415455.72, using minizinc_fw
+Converged in 5
+Data are written and graphs are painted. 
+0. The community is read. 
+0. Aggregator is read. 
+1. Best step size 0.02, 20 iterations, cost 2999318279.09, using ogsa_fw
+2. Best step size 0.016, 16 iterations, cost 2904882744.42, using ogsa_fw
+3. Best step size 0.011, 11 iterations, cost 2849868353.03, using ogsa_fw
+4. Best step size 0.015, 14 iterations, cost 2793010018.69, using ogsa_fw
+5. Best step size 0.016, 16 iterations, cost 2749135945.79, using ogsa_fw
+6. Best step size 0.007, 7 iterations, cost 2731889782.38, using ogsa_fw
+7. Best step size 0.005, 5 iterations, cost 2722127059.13, using ogsa_fw
+8. Best step size 0.008, 8 iterations, cost 2710945657.38, using ogsa_fw
+9. Best step size 0.005, 5 iterations, cost 2704122379.69, using ogsa_fw
+10. Best step size 0.004, 4 iterations, cost 2699138269.06, using ogsa_fw
+11. Best step size 0.004, 4 iterations, cost 2695545942.04, using ogsa_fw
+12. Best step size 0.003, 3 iterations, cost 2693086348.33, using ogsa_fw
+13. Best step size 0.002, 2 iterations, cost 2691850783.0, using ogsa_fw
+14. Best step size 0.002, 2 iterations, cost 2690153349.65, using ogsa_fw
+15. Best step size 0.002, 2 iterations, cost 2688634489.8, using ogsa_fw
+16. Best step size 0.002, 2 iterations, cost 2687644392.81, using ogsa_fw
+17. Best step size 0, 0 iterations, cost 2687644392.81, using ogsa_fw
+Converged in 17
+Data are written and graphs are painted. 
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Experiment is finished. 
+{0: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 0, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.11, 'init_max_demand': 3941842.0, 'max_demand': 3754032.91, 'total_demand': 163055109.0, 'demand_reduction': 0.05, 'cost_reduction': 0.1, 'pricing_time': 0.04061111111111112, 'rescheduling_time': 5411.255533333333}, 1: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 0, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.04, 'init_max_demand': 3941842.0, 'max_demand': 3531042.31, 'total_demand': 163055109.0, 'demand_reduction': 0.1, 'cost_reduction': 0.15, 'pricing_time': 0.005750000000000001, 'rescheduling_time': 4.7308166666666684}, 2: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 1, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.1, 'init_max_demand': 3941842.0, 'max_demand': 3744095.78, 'total_demand': 163055109.0, 'demand_reduction': 0.05, 'cost_reduction': 0.1, 'pricing_time': 0.018500000000000003, 'rescheduling_time': 5537.352487500001}, 3: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 1, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.03, 'init_max_demand': 3941842.0, 'max_demand': 3505869.06, 'total_demand': 163055109.0, 'demand_reduction': 0.11, 'cost_reduction': 0.15, 'pricing_time': 0.005638461538461538, 'rescheduling_time': 4.7553807692307695}, 4: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 3, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.12, 'init_max_demand': 3941842.0, 'max_demand': 3806155.02, 'total_demand': 163055109.0, 'demand_reduction': 0.03, 'cost_reduction': 0.1, 'pricing_time': 0.018750000000000003, 'rescheduling_time': 5467.826225}, 5: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 3, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.02, 'init_max_demand': 3941842.0, 'max_demand': 3477034.65, 'total_demand': 163055109.0, 'demand_reduction': 0.12, 'cost_reduction': 0.15, 'pricing_time': 0.005892857142857142, 'rescheduling_time': 4.778260714285713}, 6: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 6, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.11, 'init_max_demand': 3941842.0, 'max_demand': 3762373.78, 'total_demand': 163055109.0, 'demand_reduction': 0.05, 'cost_reduction': 0.1, 'pricing_time': 0.01925, 'rescheduling_time': 6235.37495}, 7: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 6, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.03, 'init_max_demand': 3941842.0, 'max_demand': 3509936.43, 'total_demand': 163055109.0, 'demand_reduction': 0.11, 'cost_reduction': 0.15, 'pricing_time': 0.007429411764705882, 'rescheduling_time': 4.750617647058824}, 8: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 9, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'minizinc_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.1, 'init_max_demand': 3941842.0, 'max_demand': 3742007.04, 'total_demand': 163055109.0, 'demand_reduction': 0.05, 'cost_reduction': 0.1, 'pricing_time': 0.018916666666666665, 'rescheduling_time': 5732.021616666666}, 9: {'no_households': 5000, 'penalty_weight': 1, 'no_dependent_tasks': 9, 'no_fully_flexible_tasks_min': 10, 'no_semi_flexible_tasks_min': 0, 'no_fixed_tasks_min': 0, 'algorithm': 'ogsa_fw', 'id': 0, 'init_PAR': 1.16, 'PAR': 1.03, 'init_max_demand': 3941842.0, 'max_demand': 3491317.31, 'total_demand': 163055109.0, 'demand_reduction': 0.11, 'cost_reduction': 0.15, 'pricing_time': 0.007288888888888888, 'rescheduling_time': 4.712022222222223}}
