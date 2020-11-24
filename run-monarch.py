@@ -3,6 +3,7 @@ import sys
 from fw_ddsm.iteration import *
 from fw_ddsm.output import *
 from pandas import DataFrame
+import os
 
 algorithms = dict()
 algorithms[m_minizinc] = dict()
@@ -25,7 +26,8 @@ num_repeat = 1
 name_exp = None
 id_job = 0
 cpus_nums = cpu_count()
-cpus_nums = 50
+cpus_nums = int(os.getenv('SLURM_CPUS_PER_TASK'))
+cpus_nums = None
 ensure_dependent = True
 experiment_tracker = dict()
 timeout = None
