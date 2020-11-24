@@ -251,3 +251,4 @@ Experiment is finished.
 2. Best step size 0.01676, 57 iterations, cost 2717068183.75, using minizinc_fw
 3. Best step size 0.01398, 45 iterations, cost 2665251080.43, using minizinc_fw
 4. Best step size 0.01126, 34 iterations, cost 2640486792.11, using minizinc_fw
+slurmstepd: error: *** JOB 6543908 ON mk00 CANCELLED AT 2020-11-24T22:30:12 ***
