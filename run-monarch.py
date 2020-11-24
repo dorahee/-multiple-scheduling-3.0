@@ -17,7 +17,7 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 # num_tasks_dependent_range = [0, 3, 5]
 num_households_range = [100]
 penalty_weight_range = [1]
-num_tasks_dependent_range = [0, 1, 3, 5, 7, 9]
+num_tasks_dependent_range = [1]
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
@@ -150,14 +150,15 @@ if __name__ == '__main__':
     # try:
     for i, arg in enumerate(sys.argv):
         print(f"Argument {i:>6}: {arg}")
+
         if i == 1:
-            num_households_range = [int(arg)]
-        elif i == 2:
-            penalty_weight_range = [int(arg)]
-        elif i == 3:
-            num_tasks_dependent_range = [int(arg)]
-        elif i == 4:
             cpus_nums = int(arg)
+        elif i == 2:
+            num_households_range = [int(arg)]
+        elif i == 3:
+            penalty_weight_range = [int(arg)]
+        elif i == 4:
+            num_tasks_dependent_range = [int(arg)]
         elif i == 5:
             id_job = int(arg)
         elif i == 6:
