@@ -14,7 +14,7 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [2000]
+num_households_range = [10]
 penalty_weight_range = [1]
 num_tasks_dependent_range = [0, 3, 5, 7]
 num_full_flex_tasks = 10
@@ -28,7 +28,7 @@ cpus_nums = cpu_count()
 ensure_dependent = True
 experiment_tracker = dict()
 timeout = None
-min_step_size = 0
+min_step_size = 0.0001
 ignore_tiny_step = False
 roundup_tiny_step = False
 
