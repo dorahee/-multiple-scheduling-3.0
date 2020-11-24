@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0fa0ef66-11ba-463e-b9de-2e16f4819ef8" name="Default Changelist" comment="" />
+    <list default="true" id="0fa0ef66-11ba-463e-b9de-2e16f4819ef8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-monarch.py" beforeDir="false" afterPath="$PROJECT_DIR$/run-monarch.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,8 +87,11 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.2020-11-24_14-10-19_plots.html">
+  <component name="RunManager" selected="Python.monarch_run">
     <configuration name="2020-11-24_13-22-45_plots.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/multiple-scheduling-3.0/results/exp/h100-w1-dt0-fft10-sft0-id0/2020-11-24_13-22-45_plots.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="2020-11-24_13-25-31_plots.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/multiple-scheduling-3.0/results/exp3/h100-w1-dt7-fft10-sft0-id0/2020-11-24_13-25-31_plots.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="2020-11-24_14-10-19_plots.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/multiple-scheduling-3.0/results/exp/h5000-w1-dt0-fft10-sft0-id0/2020-11-24_14-10-19_plots.html" useBuiltInWebServerPort="true">
@@ -105,28 +111,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run-monarch.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="process (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="multiple-scheduling-3.0" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/results/2020-11-13_11-51-53" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/results/2020-11-13_11-51-53/process.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.monarch_run" />
+        <item itemvalue="JavaScript Debug.2020-11-24_13-25-31_plots.html" />
         <item itemvalue="JavaScript Debug.2020-11-24_14-10-19_plots.html" />
         <item itemvalue="JavaScript Debug.2020-11-24_13-22-45_plots.html" />
-        <item itemvalue="Python.monarch_run" />
         <item itemvalue="Python.process (2)" />
-        <item itemvalue="Python.process (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +177,7 @@
       <workItem from="1606050298931" duration="4297000" />
       <workItem from="1606110438444" duration="18437000" />
       <workItem from="1606151570188" duration="9692000" />
-      <workItem from="1606181703163" duration="4005000" />
+      <workItem from="1606181703163" duration="4562000" />
     </task>
     <servers />
   </component>
