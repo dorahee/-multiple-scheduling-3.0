@@ -16,7 +16,7 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 # num_tasks_dependent_range = [0, 3, 5]
 num_households_range = [2000]
 penalty_weight_range = [1]
-num_tasks_dependent_range = [0, 1, 3, 5, 7]
+num_tasks_dependent_range = [0, 3, 5, 7]
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
@@ -30,6 +30,7 @@ experiment_tracker = dict()
 timeout = None
 min_step_size = 0
 ignore_tiny_step = False
+roundup_tiny_step = False
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
@@ -96,7 +97,8 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
         start_time_probability = new_iteration.begin_iteration(starting_prices=prices, num_cpus=num_cpus,
                                                                timeout=timeout,
                                                                min_step_size=min_step_size,
-                                                               ignore_tiny_step=ignore_tiny_step)
+                                                               ignore_tiny_step=ignore_tiny_step,
+                                                               roundup_tiny_step=roundup_tiny_step)
 
         # 3. finalising schedules
         new_iteration.finalise_schedules(num_samples=num_samples,
