@@ -25,6 +25,7 @@ num_repeat = 1
 name_exp = "exp"
 id_job = 0
 cpus_nums = cpu_count()
+cpus_nums = None
 ensure_dependent = True
 experiment_tracker = dict()
 timeout = None
