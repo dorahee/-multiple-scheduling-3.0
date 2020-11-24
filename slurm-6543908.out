@@ -248,3 +248,6 @@ Experiment is finished.
 0. The community is read. 
 0. Aggregator is read. 
 1. Best step size 0.01573, 50 iterations, cost 2795545695.76, using minizinc_fw
+2. Best step size 0.01676, 57 iterations, cost 2717068183.75, using minizinc_fw
+3. Best step size 0.01398, 45 iterations, cost 2665251080.43, using minizinc_fw
+4. Best step size 0.01126, 34 iterations, cost 2640486792.11, using minizinc_fw
