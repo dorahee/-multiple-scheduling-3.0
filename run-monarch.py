@@ -32,6 +32,8 @@ timeout = None
 min_step_size = 0.0001
 ignore_tiny_step = False
 roundup_tiny_step = False
+print_done = True
+print_steps = True
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
@@ -99,7 +101,8 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                                                                timeout=timeout,
                                                                min_step_size=min_step_size,
                                                                ignore_tiny_step=ignore_tiny_step,
-                                                               roundup_tiny_step=roundup_tiny_step)
+                                                               roundup_tiny_step=roundup_tiny_step,
+                                                               print_done=print_done, print_steps=print_steps)
 
         # 3. finalising schedules
         new_iteration.finalise_schedules(num_samples=num_samples,
