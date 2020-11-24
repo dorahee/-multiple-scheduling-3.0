@@ -14,7 +14,7 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [5000]
+num_households_range = [100]
 penalty_weight_range = [1]
 num_tasks_dependent_range = [0, 1, 3, 5, 7, 9]
 num_full_flex_tasks = 10
@@ -25,6 +25,7 @@ num_repeat = 1
 name_exp = "exp"
 id_job = 0
 cpus_nums = cpu_count()
+cpus_nums = None
 ensure_dependent = True
 experiment_tracker = dict()
 timeout = None
