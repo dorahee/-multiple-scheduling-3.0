@@ -1,2 +1,0 @@
-,PAR,algorithm,cost_reduction,demand_reduction,id,init_PAR,init_max_demand,max_demand,no_dependent_tasks,no_fixed_tasks_min,no_fully_flexible_tasks_min,no_households,no_semi_flexible_tasks_min,penalty_weight,pricing_time,rescheduling_time,total_demand
-0,1.32,minizinc_fw,0.08,0.16,0,1.58,107284.0,89811.5,1,0,10,100,0,1,0.012418181818181818,200.4909090909091,3254983.0
