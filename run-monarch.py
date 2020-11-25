@@ -15,14 +15,14 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [5000, 5000, 5000, 5000, 5000]
+num_households_range = [5000]
 penalty_weight_range = [1]
 num_tasks_dependent_range = [0, 1, 3, 5, 7]
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
 num_samples = 5
-num_repeat = 1
+num_repeat = 5
 id_job = 0
 
 # read_from_date_time = "2020-11-25_23-16-39"
@@ -172,18 +172,19 @@ if __name__ == '__main__':
 
     out1 = Output(output_root_folder="results", output_parent_folder=name_exp)
 
-    for h in num_households_range:
-        new = True
-        for w in penalty_weight_range:
-            for dt in num_tasks_dependent_range:
-                main(new_data=new,
-                     num_households=h,
-                     num_tasks_dependent=dt,
-                     penalty_weight=w,
-                     out=out1,
-                     num_cpus=cpus_nums,
-                     job_id=id_job)
-                new = False
+    for r in range(num_repeat):
+        for h in num_households_range:
+            new = True
+            for w in penalty_weight_range:
+                for dt in num_tasks_dependent_range:
+                    main(new_data=new,
+                         num_households=h,
+                         num_tasks_dependent=dt,
+                         penalty_weight=w,
+                         out=out1,
+                         num_cpus=cpus_nums,
+                         job_id=r)
+                    new = False
     # except Exception as e:
     #     print(e.args)
     #     print()
