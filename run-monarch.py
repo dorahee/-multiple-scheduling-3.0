@@ -9,23 +9,27 @@ algorithms = dict()
 algorithms[m_minizinc] = dict()
 algorithms[m_minizinc][m_before_fw] = m_minizinc
 algorithms[m_minizinc][m_after_fw] = f"{m_minizinc}_fw"
-algorithms[m_ogsa] = dict()
-algorithms[m_ogsa][m_before_fw] = m_ogsa
-algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
+# algorithms[m_ogsa] = dict()
+# algorithms[m_ogsa][m_before_fw] = m_ogsa
+# algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [100]
+num_households_range = [10]
 penalty_weight_range = [1]
-num_tasks_dependent_range = [1, 5]
+num_tasks_dependent_range = [1]
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
 num_samples = 5
 num_repeat = 1
-name_exp = None
 id_job = 0
+
+
+read_from_date_time = "2020-11-25_23-16-39"
+name_exp = read_from_date_time
 # cpus_nums = None
+
 cpus_nums = cpu_count()
 ensure_dependent = True
 experiment_tracker = dict()
@@ -33,12 +37,13 @@ timeout = None
 min_step_size = 0.001
 ignore_tiny_step = False
 roundup_tiny_step = False
-print_done = False
+print_done = True
 print_steps = False
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
     num_experiment = 0
+    read_from_date_time = "2020-11-25_23-16-39"
     print("----------------------------------------")
     param_str = f"{num_households} households, " \
         f"{num_tasks_dependent} dependent tasks, " \
@@ -90,12 +95,15 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
             if m_ogsa in alg:
                 num_tasks_dependent = None
                 penalty_weight = None
+
+            read_from_date_time = read_from_date_time
+            # read_from_date_time = this_date_time
             preferred_demand_profile, prices = \
                 new_iteration.read(algorithm=alg, inconvenience_cost_weight=penalty_weight,
                                    new_dependent_tasks=num_tasks_dependent,
                                    ensure_dependent=ensure_dependent,
                                    read_from_folder=output_parent_folder,
-                                   date_time=this_date_time)
+                                   date_time=read_from_date_time)
 
         # 2. iteration begins
         start_time_probability = new_iteration.begin_iteration(starting_prices=prices, num_cpus=num_cpus,
@@ -166,7 +174,7 @@ if __name__ == '__main__':
     out1 = Output(output_root_folder="results", output_parent_folder=name_exp)
 
     for h in num_households_range:
-        new = True
+        new = False
         for w in penalty_weight_range:
             for dt in num_tasks_dependent_range:
                 main(new_data=new,
