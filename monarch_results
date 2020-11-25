@@ -1,0 +1,28 @@
+Arguments count: 1
+Argument      0: run-monarch.py
+----------------------------------------
+10 households, 1 dependent tasks, 10 fully flexible tasks, 0 semi-flexible tasks, 0 fixed tasks, 1 penalty weight. 
+----------------------------------------
+0. The community is read. 
+0. Aggregator is read. 
+Household 5, start_times. 
+Household 0, start_times. 
+Household 9, start_times. 
+Household 8, start_times. 
+Household 3, start_times. 
+Household 7, start_times. 
+Household 6, start_times. 
+Household 4, start_times. 
+Household 2, start_times. 
+Household 1, start_times. 
+1. Best step size 0, 0 iterations, cost 5329833.3, using minizinc_fw
+Converged in 1
+Data are written and graphs are painted. 
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Experiment is finished. 
+    PAR    algorithm cost_reduction  ... pricing_time rescheduling_time total_demand
+0  3.44  minizinc_fw              0  ...       0.0005               4.8       342364
+
+[1 rows x 17 columns]
