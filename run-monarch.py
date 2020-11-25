@@ -15,15 +15,9 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-<<<<<<< HEAD
 num_households_range = [5000, 5000, 5000, 5000, 5000]
 penalty_weight_range = [1]
 num_tasks_dependent_range = [0, 1, 3, 5, 7]
-=======
-num_households_range = [10]
-penalty_weight_range = [1]
-num_tasks_dependent_range = [1]
->>>>>>> fe76f51123aea242da05d0852a70071af76037d9
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
@@ -31,9 +25,8 @@ num_samples = 5
 num_repeat = 1
 id_job = 0
 
-
-read_from_date_time = "2020-11-25_23-16-39"
-name_exp = read_from_date_time
+# read_from_date_time = "2020-11-25_23-16-39"
+name_exp = "aws"
 # cpus_nums = None
 
 cpus_nums = cpu_count()
@@ -43,13 +36,13 @@ timeout = None
 min_step_size = 0.001
 ignore_tiny_step = False
 roundup_tiny_step = False
-print_done = True
+print_done = False
 print_steps = False
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
     num_experiment = 0
-    read_from_date_time = "2020-11-25_23-16-39"
+    # read_from_date_time = "2020-11-25_23-16-39"
     print("----------------------------------------")
     param_str = f"{num_households} households, " \
         f"{num_tasks_dependent} dependent tasks, " \
@@ -102,8 +95,8 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                 num_tasks_dependent = None
                 penalty_weight = None
 
-            read_from_date_time = read_from_date_time
-            # read_from_date_time = this_date_time
+            # read_from_date_time = read_from_date_time
+            read_from_date_time = this_date_time
             preferred_demand_profile, prices = \
                 new_iteration.read(algorithm=alg, inconvenience_cost_weight=penalty_weight,
                                    new_dependent_tasks=num_tasks_dependent,
@@ -180,7 +173,7 @@ if __name__ == '__main__':
     out1 = Output(output_root_folder="results", output_parent_folder=name_exp)
 
     for h in num_households_range:
-        new = False
+        new = True
         for w in penalty_weight_range:
             for dt in num_tasks_dependent_range:
                 main(new_data=new,
