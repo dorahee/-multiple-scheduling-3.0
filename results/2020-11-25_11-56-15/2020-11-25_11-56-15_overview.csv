@@ -1,0 +1,5 @@
+,no_households,penalty_weight,no_dependent_tasks,no_fully_flexible_tasks_min,no_semi_flexible_tasks_min,no_fixed_tasks_min,algorithm,id,init_PAR,PAR,init_max_demand,max_demand,total_demand,demand_reduction,cost_reduction,pricing_time,rescheduling_time
+0,5000,1,0,10,0,0,minizinc_fw,0,1.22,1.05,4067649.0,3513190.23,160494103.0,0.14,0.1,0.004696428571428572,1827.8414285714284
+1,5000,1,0,10,0,0,ogsa_fw,0,1.22,1.06,4067649.0,3551214.85,160494103.0,0.13,0.1,0.004474999999999998,5.940614285714285
+2,5000,1,1,10,0,0,minizinc_fw,0,1.22,1.05,4067649.0,3527278.36,160494103.0,0.13,0.1,0.004746153846153845,1173.200769230769
+3,5000,1,1,10,0,0,ogsa_fw,0,1.22,1.07,4067649.0,3568688.83,160494103.0,0.12,0.1,0.004808,5.931175999999999
