@@ -15,7 +15,7 @@ algorithms[m_minizinc][m_after_fw] = f"{m_minizinc}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [100]
+num_households_range = [10]
 penalty_weight_range = [1]
 num_tasks_dependent_range = [1]
 num_full_flex_tasks = 10
@@ -34,7 +34,7 @@ timeout = None
 min_step_size = 0.0001
 ignore_tiny_step = False
 roundup_tiny_step = False
-print_done = False
+print_done = True
 print_steps = True
 
 
