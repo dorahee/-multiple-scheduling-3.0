@@ -9,13 +9,13 @@ algorithms = dict()
 algorithms[m_minizinc] = dict()
 algorithms[m_minizinc][m_before_fw] = m_minizinc
 algorithms[m_minizinc][m_after_fw] = f"{m_minizinc}_fw"
-# algorithms[m_ogsa] = dict()
-# algorithms[m_ogsa][m_before_fw] = m_ogsa
-# algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
+algorithms[m_ogsa] = dict()
+algorithms[m_ogsa][m_before_fw] = m_ogsa
+algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [10]
+num_households_range = [100]
 penalty_weight_range = [1]
 num_tasks_dependent_range = [1]
 num_full_flex_tasks = 10
@@ -34,8 +34,8 @@ timeout = None
 min_step_size = 0.0001
 ignore_tiny_step = False
 roundup_tiny_step = False
-print_done = True
-print_steps = True
+print_done = False
+print_steps = False
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
@@ -140,7 +140,7 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
 
     print("----------------------------------------")
     print("Experiment is finished. ")
-    print(experiment_tracker)
+    print(df_exp)
 
 
 if __name__ == '__main__':

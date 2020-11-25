@@ -18,5 +18,7 @@
 module purge
 module load python/3.8.5-gcc8
 
+source ~/td70/py385/bin/activate
+
 python3 ./run-monarch.py ${SLURM_CPUS_PER_TASK}
 
