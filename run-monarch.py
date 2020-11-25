@@ -9,9 +9,9 @@ algorithms = dict()
 algorithms[m_minizinc] = dict()
 algorithms[m_minizinc][m_before_fw] = m_minizinc
 algorithms[m_minizinc][m_after_fw] = f"{m_minizinc}_fw"
-# algorithms[m_ogsa] = dict()
-# algorithms[m_ogsa][m_before_fw] = m_ogsa
-# algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
+algorithms[m_ogsa] = dict()
+algorithms[m_ogsa][m_before_fw] = m_ogsa
+algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
