@@ -37,7 +37,7 @@ cpus_nums = cpu_count()
 ensure_dependent = True
 experiment_tracker = dict()
 timeout = 120
-min_step_size = 0.0001
+min_step_size = 0.005
 ignore_tiny_step = True
 roundup_tiny_step = False
 print_done = False
@@ -151,7 +151,7 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
 
     print("----------------------------------------")
     print("Experiment is finished. ")
-    print(df_exp[k_households_no, "algorithm", s_par])
+    print(df_exp[[k_households_no, "algorithm", "init_PAR", s_par, "demand_reduction", "cost_reduction"]])
 
     # if email_results:
     #     msg = MIMEMultipart()
