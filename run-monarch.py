@@ -37,7 +37,7 @@ min_step_size = 0.001
 ignore_tiny_step = False
 roundup_tiny_step = False
 print_done = False
-print_steps = False
+print_steps = True
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
