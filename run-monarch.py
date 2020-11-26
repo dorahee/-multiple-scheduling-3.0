@@ -4,6 +4,10 @@ from fw_ddsm.iteration import *
 from fw_ddsm.output import *
 from pandas import DataFrame
 import os
+from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
+from email.mime.text import MIMEText
+import smtplib
 
 algorithms = dict()
 algorithms[m_minizinc] = dict()
@@ -34,10 +38,11 @@ ensure_dependent = True
 experiment_tracker = dict()
 timeout = 120
 min_step_size = 0.0001
-ignore_tiny_step = False
+ignore_tiny_step = True
 roundup_tiny_step = False
 print_done = False
-print_steps = True
+print_steps = False
+email_results = True
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
@@ -146,7 +151,29 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
 
     print("----------------------------------------")
     print("Experiment is finished. ")
-    print(df_exp)
+    print(df_exp[k_households_no, "algorithm", s_par])
+
+    # if email_results:
+    #     msg = MIMEMultipart()
+    #     body_part = MIMEText(param_str, 'plain')
+    #     msg['Subject'] = "Experiment@Nectar completed. "
+    #     msg['From'] = "dora.he3@monash.edu"
+    #     msg['To'] = "dora.he3@monash.edu"
+    #     # Add body to email
+    #     msg.attach(body_part)
+    #     # open and read the CSV file in binary
+    #     with open("{}{}_overview.csv".format(output_parent_folder, this_date_time), 'rb') as file:
+    #         # Attach the file with filename to the email
+    #         msg.attach(MIMEApplication(file.read(), Name="overview.csv"))
+
+        # Create SMTP object
+        # smtp_obj = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+        # # Login to the server
+        # smtp_obj.login(SMTP_USERNAME, SMTP_PASSWORD)
+        #
+        # # Convert the message to a string and send it
+        # smtp_obj.sendmail(msg['From'], msg['To'], msg.as_string())
+        # smtp_obj.quit()
 
 
 if __name__ == '__main__':
