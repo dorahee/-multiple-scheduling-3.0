@@ -17,27 +17,27 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 # num_tasks_dependent_range = [0, 3, 5]
 num_households_range = [5000]
 penalty_weight_range = [1]
-num_tasks_dependent_range = [3, 5, 7, 0, 1]
+num_tasks_dependent_range = [3]
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
 num_samples = 5
-num_repeat = 5
+num_repeat = 1
 id_job = 0
 
 # read_from_date_time = "2020-11-25_23-16-39"
-name_exp = "aws"
+name_exp = None
 # cpus_nums = None
 
 cpus_nums = cpu_count()
 ensure_dependent = True
 experiment_tracker = dict()
-timeout = None
+timeout = 60
 min_step_size = 0.001
 ignore_tiny_step = False
 roundup_tiny_step = False
 print_done = False
-print_steps = False
+print_steps = True
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
