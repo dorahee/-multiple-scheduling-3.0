@@ -3,7 +3,7 @@
 #SBATCH --job-name=single-fw-ddsm
 #SBATCH --partition=short
 #SBATCH --time=1-
-#SBATCH --nnodes=1
+#SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --mem=32768
 #SBATCH --cpus-per-task=46
