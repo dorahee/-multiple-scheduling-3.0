@@ -110,12 +110,14 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                                    date_time=read_from_date_time)
 
         # 2. iteration begins
-        start_time_probability = new_iteration.begin_iteration(starting_prices=prices, num_cpus=num_cpus,
+        start_time_probability, num_iterations = \
+            new_iteration.begin_iteration(starting_prices=prices, num_cpus=num_cpus,
                                                                timeout=timeout,
                                                                min_step_size=min_step_size,
                                                                ignore_tiny_step=ignore_tiny_step,
                                                                roundup_tiny_step=roundup_tiny_step,
                                                                print_done=print_done, print_steps=print_steps)
+        experiment_tracker[num_experiment][k_iteration_no] = num_iterations
 
         # 3. finalising schedules
         new_iteration.finalise_schedules(num_samples=num_samples,
@@ -151,7 +153,9 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
 
     print("----------------------------------------")
     print("Experiment is finished. ")
-    print(df_exp[[k_households_no, "algorithm", "init_PAR", s_par, "demand_reduction", "cost_reduction"]])
+    print(df_exp[[k_households_no, k_dependent_tasks_no, k_penalty_weight,
+                  m_algorithm, k_iteration_no, s_par_init, s_par,
+                  s_demand_reduction, p_cost_reduction]])
 
     # if email_results:
     #     msg = MIMEMultipart()
