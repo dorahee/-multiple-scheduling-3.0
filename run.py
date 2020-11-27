@@ -153,8 +153,9 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
 
     print("----------------------------------------")
     print("Experiment is finished. ")
-    print(df_exp[[k_households_no, "algorithm", k_iteration_no, "init_PAR", s_par,
-                  "demand_reduction", "cost_reduction"]])
+    print(df_exp[[k_households_no, k_dependent_tasks_no, k_penalty_weight,
+                  m_algorithm, k_iteration_no, s_par_init, s_par,
+                  s_demand_reduction, p_cost_reduction]])
 
     # if email_results:
     #     msg = MIMEMultipart()
