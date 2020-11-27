@@ -21,12 +21,12 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 # num_tasks_dependent_range = [0, 3, 5]
 num_households_range = [5000]
 penalty_weight_range = [1]
-num_tasks_dependent_range = [0, 9]
+num_tasks_dependent_range = [0, 3, 6, 9]
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
 num_samples = 5
-num_repeat = 1
+num_repeat = 5
 id_job = 0
 
 # read_from_date_time = "2020-11-25_23-16-39"
