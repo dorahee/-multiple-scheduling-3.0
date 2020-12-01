@@ -40,13 +40,15 @@ k_repeat = "Repeat"
 k_tpd = "TDP"
 
 # combine data
-df_all_demands = pd.DataFrame()
-df_all_others = pd.DataFrame()
-for r in repeat_numbers:
-    for h in household_numbers:
-        for k, v in algorithms.items():
-            folder_name = f"h{h}-w5-dt3-fft10-sft0-id{r}"
 
+df_all_demands_dict = dict()
+df_all_others_dict = dict()
+for k, v in algorithms.items():
+    df_all_demands = pd.DataFrame()
+    df_all_others = pd.DataFrame()
+    for r in repeat_numbers:
+        for h in household_numbers:
+            folder_name = f"h{h}-w5-dt3-fft10-sft0-id{r}"
             # get before and after demands
             file_demands_name = f"{k}_aggregator_demands.csv"
             df = pd.read_csv(f"{folder_name}/{file_demands_name}").transpose()
@@ -91,10 +93,13 @@ for r in repeat_numbers:
             df = df.iloc[1:, :].reset_index(drop=True)
             df[s_demand] = "Actual"
             df_all_others = df_all_others.append(df)
+    df_all_demands_dict[k] = df_all_demands
+    df_all_others_dict[k] = df_all_others
 
 if DRAW:
     # draw graphs for each repeat
-    for alg in algorithms.values():
+    for k, alg in algorithms.items():
+        df_all_demands = df_all_demands_dict[k]
         df_alg = df_all_demands[df_all_demands["Method"] == alg]
         for r in repeat_numbers:
             df = df_alg[df_alg["Repeat"] == r]
@@ -124,50 +129,64 @@ if DESC:
     p_cost_reduction_diff = p_cost_reduction + " distance"
     s_par_diff = s_par + " distance"
 
-    df_all_others_ext = pd.DataFrame()
-    opt_demand_red = 0
-    opt_cost_red = 0
-    opt_par = 0
-    for index, row in df_all_others.iterrows():
-        this_demand_reduction = row[s_demand_reduction]
-        this_cost_reduction = row[p_cost_reduction]
-        this_par = row[s_par]
-        if "Opt" in row[s_demand] or "Imp" in row[s_demand]:
-            opt_demand_red = this_demand_reduction
-            opt_cost_red = this_cost_reduction
-            opt_par = this_par
-        elif "Act" in row[s_demand]:
-            val = abs(opt_demand_red - this_demand_reduction)
-            row[s_demand_reduction_diff] = "{0:.0f}%".format(val * 100)
-            val = abs(opt_cost_red - this_cost_reduction)
-            row[p_cost_reduction_diff] = "{0:.0f}%".format(val * 100)
-            val = abs(opt_par - this_par)
-            row[s_par_diff] = "{0:.2f}".format(val)
-        df_all_others_ext = df_all_others_ext.append(row)
+    for k, v in algorithms.items():
+        df_all_others = df_all_others_dict[k]
+        df_all_others_ext = pd.DataFrame()
+        opt_demand_red = 0
+        opt_cost_red = 0
+        opt_par = 0
+        for index, row in df_all_others.iterrows():
+            this_demand_reduction = row[s_demand_reduction]
+            this_cost_reduction = row[p_cost_reduction]
+            this_par = row[s_par]
+            if "Opt" in row[s_demand] or "Imp" in row[s_demand]:
+                opt_demand_red = this_demand_reduction
+                opt_cost_red = this_cost_reduction
+                opt_par = this_par
+            elif "Act" in row[s_demand]:
+                val = abs(opt_demand_red - this_demand_reduction)
+                # row[s_demand_reduction_diff] = "{0:.0f}%".format(val * 100)
+                row[s_demand_reduction_diff] = val
+                val = abs(opt_cost_red - this_cost_reduction)
+                # row[p_cost_reduction_diff] = "{0:.0f}%".format(val * 100)
+                row[p_cost_reduction_diff] = val
+                val = abs(opt_par - this_par)
+                # row[s_par_diff] = "{0:.2f}".format(val)
+                row[s_par_diff] = val
+            df_all_others_ext = df_all_others_ext.append(row)
 
-    # df_all_others_ext[s_par] \
-    #     = pd.Series(["{0:.2f}".format(val) for val in df_all_others_ext[s_par]], index=df_all_others_ext.index)
-    # df_all_others_ext[s_demand_reduction] \
-    #     = pd.Series(["{0:.0f}%".format(val * 100) for val in df_all_others_ext[s_demand_reduction]],
-    #                 index=df_all_others_ext.index)
-    # df_all_others_ext[p_cost_reduction] \
-    #     = pd.Series(["{0:.0f}%".format(val * 100) for val in df_all_others_ext[p_cost_reduction]],
-    #                 index=df_all_others_ext.index)
-    df_all_others_ext = df_all_others_ext.set_index([k_households_no, k_repeat, s_demand])
-    df_all_others_ext.columns \
-        = ["PAR", "Cost Reduction", "Demand Reduction",
-           "PAR Distance", "Cost Reduction Distance", "Demand Reduction Distance"]
-    df_all_others_ext = df_all_others_ext.stack().reset_index()
+        # df_all_others_ext[s_par] \
+        #     = pd.Series(["{0:.2f}".format(val) for val in df_all_others_ext[s_par]], index=df_all_others_ext.index)
+        # df_all_others_ext[s_demand_reduction] \
+        #     = pd.Series(["{0:.0f}%".format(val * 100) for val in df_all_others_ext[s_demand_reduction]],
+        #                 index=df_all_others_ext.index)
+        # df_all_others_ext[p_cost_reduction] \
+        #     = pd.Series(["{0:.0f}%".format(val * 100) for val in df_all_others_ext[p_cost_reduction]],
+        #                 index=df_all_others_ext.index)
+        df_all_others_ext = df_all_others_ext.set_index([k_households_no, k_repeat, s_demand])
+        df_all_others_ext.index.names = ["#Households", "Repeat", "Demand Profile"]
+        df_all_others_ext.columns \
+            = ["PAR", "Cost Reduction", "Demand Reduction",
+               "PAR Distance", "Cost Reduction Distance", "Demand Reduction Distance"]
+        df_all_others_ext \
+            = df_all_others_ext.loc[:, ["PAR", "PAR Distance", "Demand Reduction", "Demand Reduction Distance",
+                                        "Cost Reduction", "Cost Reduction Distance"]]
+        df_all_others_ext = df_all_others_ext.stack().reset_index()
 
-    df_all_others_ext.columns = ["#Households", "Repeat", "Demand Profile", "Result", "Value"]
-    # df_all_others_ext.to_csv(f"combined_others.csv")
-    # df_all_others_ext.to_latex(f"combined_others.tex", longtable=True,
-    #                            caption=f"Schedule demonstration, reductions",
-    #                            label=f"tab:multiple:exp:demon")
+        df_all_others_ext.columns = ["#Households", "Repeat", "Demand Profile", "Result", "Value"]
+        # df_all_others_ext.to_csv(f"combined_others.csv")
+        # df_all_others_ext.to_latex(f"combined_others.tex", longtable=True,
+        #                            caption=f"Schedule demonstration, reductions",
+        #                            label=f"tab:multiple:exp:demon")
 
-    df_all_others_desc = df_all_others_ext.groupby(["#Households", "Repeat", "Demand Profile", "Result"])\
-        .agg(['min', 'mean', 'max'])
+        df_all_others_desc = df_all_others_ext \
+            .groupby(["#Households", "Repeat", "Demand Profile", "Result"], sort=False) \
+            .agg(['min', 'median', 'max'])
+        df_all_others_desc.to_csv(f"{v}_combined_others.csv")
+        df_all_others_ext.to_latex(f"{v}_combined_others.tex", longtable=True,
+                                   caption=f"Schedule demonstration, reductions",
+                                   label=f"tab:multiple:exp:demon")
 
-    print("Aggregated data. ")
+        print(f"Aggregated {v}_combined_others. ")
 
 print("Done.")
