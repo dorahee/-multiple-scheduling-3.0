@@ -205,8 +205,8 @@ if __name__ == '__main__':
     out1 = Output(output_root_folder="results", output_parent_folder=name_exp)
 
     for r in range(num_repeat):
+        new = True
         for h in num_households_range:
-            new = True
             for w in penalty_weight_range:
                 for dt in num_tasks_dependent_range:
                     main(new_data=new,
