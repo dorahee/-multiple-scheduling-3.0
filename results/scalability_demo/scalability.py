@@ -13,13 +13,19 @@ label_names = {
     "no_iterations": "#Iterations",
     "pricing_time": "Pricing time per iteration (second)",
     "rescheduling_time": "Scheduling time per iteration (second)",
-    "rescheduling_time_household": "Scheduling time household per iteration (second)"
+    "rescheduling_time_household": "Scheduling time household per iteration (second)",
+    "demand_reduction": "Demand reduction",
+    "cost_reduction": "Cost reduction",
+    "PAR": "PAR",
 }
 file_names = {
     "no_iterations": "iteration",
     "pricing_time": "runtime-pricing",
     "rescheduling_time": "runtime-scheduling",
-    "rescheduling_time_household": "runtime-scheduling-household"
+    "rescheduling_time_household": "runtime-scheduling-household",
+    "demand_reduction": "demand-reduction",
+    "cost_reduction": "cost-reduction",
+    "PAR": "par",
 }
 
 folder = "results/scalability_demo"
@@ -59,6 +65,11 @@ for k, v in label_names.items():
                        kind="line",
                        # palette=colours
                        )
+    if "reduction" in k:
+        yticks = plot.axes[0][0].get_yticks()
+        ylabels = ['{:,.0f}%'.format(x * 100) for x in yticks]
+        plot.set_yticklabels(ylabels)
+
     plot.savefig(f"{file_names[k]}.png", dpi=600)
 df_desc_all = df_desc_all.reset_index()
 df_desc_all.to_csv("desc.csv")
