@@ -22,9 +22,9 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 # num_households_range = [50, 100, 500, 1000, 2000, 4000, 6000, 8000, 10000]
 num_households_range = [5]
 penalty_weight_range = [5]
-num_tasks_dependent_range = [3]
-num_full_flex_tasks = 10
-num_semi_flex_tasks = 0
+num_tasks_dependent_range = [0, 2, 4, 6, 8]
+num_full_flex_tasks = 0
+num_semi_flex_tasks = 10
 num_fixed_tasks = 0
 num_samples = 5
 num_repeat = 1
@@ -220,8 +220,8 @@ if __name__ == '__main__':
     out1 = Output(output_root_folder="results", output_parent_folder=name_exp)
 
     for r in range(num_repeat):
+        new = True
         for h in num_households_range:
-            new = True
             for w in penalty_weight_range:
                 for dt in num_tasks_dependent_range:
                     for battery_use in battery_usages:
