@@ -19,15 +19,18 @@ algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
 # penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [50, 100, 500, 1000, 2000, 4000, 6000, 8000, 10000]
+# num_households_range = [50, 100, 500, 1000, 2000, 4000, 6000, 8000, 10000]
+num_households_range = [5]
 penalty_weight_range = [5]
 num_tasks_dependent_range = [3]
 num_full_flex_tasks = 10
 num_semi_flex_tasks = 0
 num_fixed_tasks = 0
 num_samples = 5
-num_repeat = 5
+num_repeat = 1
 id_job = 0
+battery_usages = [True, False]
+battery_solver_choice = "gurobi"
 
 # read_from_date_time = "2020-11-25_23-16-39"
 name_exp = None
@@ -45,16 +48,18 @@ print_steps = False
 email_results = True
 
 
-def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0):
+def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0,
+         use_battery=False):
     num_experiment = 0
     # read_from_date_time = "2020-11-25_23-16-39"
     print("----------------------------------------")
     param_str = f"{num_households} households, " \
-        f"{num_tasks_dependent} dependent tasks, " \
-        f"{num_full_flex_tasks} fully flexible tasks, " \
-        f"{num_semi_flex_tasks} semi-flexible tasks, " \
-        f"{num_fixed_tasks} fixed tasks, " \
-        f"{penalty_weight} penalty weight. "
+                f"{int(use_battery)} battery, " \
+                f"{num_tasks_dependent} dependent tasks, " \
+                f"{num_full_flex_tasks} fully flexible tasks, " \
+                f"{num_semi_flex_tasks} semi-flexible tasks, " \
+                f"{num_fixed_tasks} fixed tasks, " \
+                f"{penalty_weight} penalty weight. "
     print(param_str)
     print("----------------------------------------")
 
@@ -65,7 +70,8 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                                 num_full_flex_task_min=num_full_flex_tasks,
                                 num_semi_flex_task_min=num_semi_flex_tasks,
                                 inconvenience_cost_weight=penalty_weight,
-                                folder_id=job_id)
+                                folder_id=job_id,
+                                use_battery=use_battery)
     plots_demand_layout = []
     plots_demand_finalised_layout = []
     for alg in algorithms.values():
@@ -81,6 +87,11 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
         experiment_tracker[num_experiment][m_algorithm] = alg[m_after_fw]
         experiment_tracker[num_experiment]["id"] = job_id
 
+        if use_battery:
+            experiment_tracker[num_experiment][b_cap_max] = battery_capacity_max
+            experiment_tracker[num_experiment][b_cap_min] = battery_capacity_min
+            experiment_tracker[num_experiment][b_power] = battery_power
+
         # 1. iteration data
         if new_data:
             preferred_demand_profile, prices = \
@@ -93,7 +104,9 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                                   inconvenience_cost_weight=penalty_weight,
                                   max_care_factor=care_f_max,
                                   data_folder=output_parent_folder,
-                                  date_time=this_date_time)
+                                  date_time=this_date_time,
+                                  capacity_max=battery_capacity_max, capacity_min=battery_capacity_min,
+                                  power=battery_power)
             new_data = False
         else:
             if m_ogsa in alg:
@@ -111,12 +124,15 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
 
         # 2. iteration begins
         start_time_probability, num_iterations = \
-            new_iteration.begin_iteration(starting_prices=prices, num_cpus=num_cpus,
-                                                               timeout=timeout,
-                                                               min_step_size=min_step_size,
-                                                               ignore_tiny_step=ignore_tiny_step,
-                                                               roundup_tiny_step=roundup_tiny_step,
-                                                               print_done=print_done, print_steps=print_steps)
+            new_iteration.begin_iteration(starting_prices=prices,
+                                          use_battery=use_battery,
+                                          battery_solver=battery_solver_choice,
+                                          num_cpus=num_cpus,
+                                          timeout=timeout,
+                                          min_step_size=min_step_size,
+                                          ignore_tiny_step=ignore_tiny_step,
+                                          roundup_tiny_step=roundup_tiny_step,
+                                          print_done=print_done, print_steps=print_steps)
         experiment_tracker[num_experiment][k_iteration_no] = num_iterations
 
         # 3. finalising schedules
@@ -170,14 +186,14 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
     #         # Attach the file with filename to the email
     #         msg.attach(MIMEApplication(file.read(), Name="overview.csv"))
 
-        # Create SMTP object
-        # smtp_obj = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
-        # # Login to the server
-        # smtp_obj.login(SMTP_USERNAME, SMTP_PASSWORD)
-        #
-        # # Convert the message to a string and send it
-        # smtp_obj.sendmail(msg['From'], msg['To'], msg.as_string())
-        # smtp_obj.quit()
+    # Create SMTP object
+    # smtp_obj = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
+    # # Login to the server
+    # smtp_obj.login(SMTP_USERNAME, SMTP_PASSWORD)
+    #
+    # # Convert the message to a string and send it
+    # smtp_obj.sendmail(msg['From'], msg['To'], msg.as_string())
+    # smtp_obj.quit()
 
 
 if __name__ == '__main__':
@@ -208,14 +224,16 @@ if __name__ == '__main__':
             new = True
             for w in penalty_weight_range:
                 for dt in num_tasks_dependent_range:
-                    main(new_data=new,
-                         num_households=h,
-                         num_tasks_dependent=dt,
-                         penalty_weight=w,
-                         out=out1,
-                         num_cpus=cpus_nums,
-                         job_id=r)
-                    new = False
+                    for battery_use in battery_usages:
+                        main(new_data=new,
+                             num_households=h,
+                             num_tasks_dependent=dt,
+                             penalty_weight=w,
+                             out=out1,
+                             num_cpus=cpus_nums,
+                             job_id=r,
+                             use_battery=battery_use)
+                        new = False
     # except Exception as e:
     #     print(e.args)
     #     print()
