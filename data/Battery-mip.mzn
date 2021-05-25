@@ -24,7 +24,7 @@ array[INTERVALS] of var -max_power..max_power: battery_profile;  % charge/discha
 
 constraint battery_soc[ceil(fully_charge_hour * num_intervals_hour)] = max_energy_capacity;
 
-% constraint battery_soc[num_intervals] = max_energy_capacity;
+constraint battery_soc[1] = 0.2 * max_energy_capacity;
 
 constraint forall (i in 2..num_intervals) (
   battery_soc[i] = battery_soc[i - 1] + battery_profile[i] / num_intervals_hour
