@@ -13,26 +13,26 @@ algorithms = dict()
 algorithms[m_minizinc] = dict()
 algorithms[m_minizinc][m_before_fw] = m_minizinc
 algorithms[m_minizinc][m_after_fw] = f"{m_minizinc}_fw"
-algorithms[m_ogsa] = dict()
-algorithms[m_ogsa][m_before_fw] = m_ogsa
-algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
+# algorithms[m_ogsa] = dict()
+# algorithms[m_ogsa][m_before_fw] = m_ogsa
+# algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
-# penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
+# penalty_weight_range = [0, 5,pol 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
 # num_households_range = [50, 100, 500, 1000, 2000, 4000, 6000, 8000, 10000]
-num_households_range = [5]
-penalty_weight_range = [5]
+num_households_range = [100]
+penalty_weight_range = [100]
 # num_tasks_dependent_range = [0, 2, 4, 6, 8]
 num_tasks_dependent_range = [3]
 num_full_flex_tasks = 0
-num_semi_flex_tasks = 10
-num_fixed_tasks = 0
+num_semi_flex_tasks = 0
+num_fixed_tasks = 5
 num_samples = 5
 num_repeat = 1
 id_job = 0
 battery_usages = [True, False]
 battery_solver_choice = "gurobi"
-battery_fully_charged_hour = 5
+battery_fully_charged_hour = 0
 
 # read_from_date_time = "2020-11-25_23-16-39"
 name_exp = None
@@ -42,7 +42,7 @@ cpus_nums = cpu_count()
 ensure_dependent = True
 experiment_tracker = dict()
 timeout = 120
-min_step_size = 0.0005
+min_step_size = 0.001
 ignore_tiny_step = True
 roundup_tiny_step = False
 print_done = False
@@ -51,12 +51,12 @@ email_results = True
 
 
 def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True, num_cpus=None, job_id=0,
-         use_battery=False):
+         use_battery=False, hour_fully_charge=fully_charge_hour):
     num_experiment = 0
     # read_from_date_time = "2020-11-25_23-16-39"
     print("----------------------------------------")
     param_str = f"{num_households} households, " \
-                f"{int(use_battery)} battery, " \
+                f"{int(use_battery)} battery (fully charged at {hour_fully_charge}), " \
                 f"{num_tasks_dependent} dependent tasks, " \
                 f"{num_full_flex_tasks} fully flexible tasks, " \
                 f"{num_semi_flex_tasks} semi-flexible tasks, " \
@@ -131,7 +131,7 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                                           battery_solver=battery_solver_choice,
                                           num_cpus=num_cpus,
                                           timeout=timeout,
-                                          fully_charge_time=battery_fully_charged_hour,
+                                          fully_charge_time=hour_fully_charge,
                                           min_step_size=min_step_size,
                                           ignore_tiny_step=ignore_tiny_step,
                                           roundup_tiny_step=roundup_tiny_step,
@@ -148,7 +148,8 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                                         aggregator_tracker=new_iteration.aggregator.tracker,
                                         aggregator_final=new_iteration.aggregator.final,
                                         community_tracker=new_iteration.community.tracker,
-                                        community_final=new_iteration.community.final)
+                                        community_final=new_iteration.community.final,
+                                        obj_par=True)
         plots_demand_layout.append(plots_demand)
         plots_demand_finalised_layout.append(plots_demand_finalised)
         experiment_tracker[num_experiment].update(overview_dict)
@@ -158,8 +159,8 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
     output_file(f"{output_folder}{this_date_time}_plots.html")
     tab1 = Panel(child=layout(plots_demand_layout), title="FW-DDSM results")
     tab2 = Panel(child=layout(plots_demand_finalised_layout), title="Actual schedules")
-    div = Div(text=f"""{param_str}""", width=800)
-    save(layout([div], [Tabs(tabs=[tab2, tab1])]))
+    div = Div(text=f"""{param_str}""", width=1600)
+    save(layout([div], [Tabs(tabs=[tab1, tab2])]))
 
     # 6. writing experiment overview
     df_exp = DataFrame.from_dict(experiment_tracker).transpose()
@@ -223,8 +224,8 @@ if __name__ == '__main__':
     out1 = Output(output_root_folder="results", output_parent_folder=name_exp)
 
     for r in range(num_repeat):
-        new = True
         for h in num_households_range:
+            new = True
             for w in penalty_weight_range:
                 for dt in num_tasks_dependent_range:
                     for battery_use in battery_usages:
@@ -235,7 +236,8 @@ if __name__ == '__main__':
                              out=out1,
                              num_cpus=cpus_nums,
                              job_id=r,
-                             use_battery=battery_use)
+                             use_battery=battery_use,
+                             hour_fully_charge=battery_fully_charged_hour)
                         new = False
     # except Exception as e:
     #     print(e.args)
