@@ -19,10 +19,17 @@ algorithms[m_minizinc][m_after_fw] = f"{m_minizinc}_fw"
 
 # penalty_weight_range = [0, 5,pol 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
+<<<<<<< HEAD
 num_households_range = [50, 100, 500, 1000, 2000, 4000, 6000, 8000, 10000]
 # num_households_range = [50]
 penalty_weight_range = [100]
 # num_tasks_dependent_range = [0, 2, 4, 6, 8]
+=======
+num_households_range = [50, 100, 500, 1000, 2000, 4000, 6000, 8000]
+# num_households_range = [100]
+penalty_weight_range = [1, 50, 100, 1000]
+# num_tasks_dependent_range = [0, 1, 3, 5]
+>>>>>>> bd688ba6548466181ed3f7b047970c7179350d5b
 num_tasks_dependent_range = [3]
 num_full_flex_tasks = 0
 num_semi_flex_tasks = 6
