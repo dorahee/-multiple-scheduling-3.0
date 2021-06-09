@@ -17,11 +17,11 @@ algorithms[m_minizinc][m_after_fw] = f"{m_minizinc}_fw"
 # algorithms[m_ogsa][m_before_fw] = m_ogsa
 # algorithms[m_ogsa][m_after_fw] = f"{m_ogsa}_fw"
 
-# penalty_weight_range = [0, 5,pol 50, 500, 5000, 50000]
+# penalty_weight_range = [0, 5, 50, 500, 5000, 50000]
 # num_tasks_dependent_range = [0, 3, 5]
-num_households_range = [50, 100, 500, 1000, 2000, 4000, 6000, 8000]
+num_households_range = [1, 10, 100, 500]
 # num_households_range = [50, 80, 100]
-penalty_weight_range = [1, 10, 50, 100, 500, 1000]
+penalty_weight_range = [0, 1, 50, 100]
 # num_tasks_dependent_range = [0, 2, 4, 6, 8]
 num_tasks_dependent_range = [3]
 num_full_flex_tasks = 0
@@ -34,7 +34,7 @@ battery_usages = [True, False]
 battery_solver_choice = "gurobi"
 battery_fully_charged_hour = 2
 
-# read_from_date_time = "2021-06-08_23-20-47"
+# read_from_date_time = "2021-06-09_22-37-24"
 read_from_date_time = None
 name_exp = None
 # cpus_nums = None
