@@ -115,7 +115,7 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                                   power=battery_power)
             new_data = False
         else:
-            if m_ogsa in alg:
+            if m_ogsa in alg or use_battery:
                 num_tasks_dependent = None
                 penalty_weight = None
 
