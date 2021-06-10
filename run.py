@@ -119,6 +119,7 @@ def main(num_households, num_tasks_dependent, penalty_weight, out, new_data=True
                 num_tasks_dependent = None
                 penalty_weight = None
                 print("Same dependent tasks. ")
+                print("----------------------------------------")
 
             # read_from_date_time = read_from_date_time
             if read_from_dt is not None:
