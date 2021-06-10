@@ -32,7 +32,7 @@ num_repeat = 1
 id_job = 0
 battery_usages = [True, False]
 battery_solver_choice = "gurobi"
-battery_fully_charged_hour = 2
+battery_fully_charged_hour = 0
 
 # read_from_date_time = "2021-06-09_22-37-24"
 read_from_date_time = None
