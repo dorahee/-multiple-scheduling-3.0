@@ -47,7 +47,7 @@ constraint forall (i in INTERVALS) (max_total_demand >= total_demand2[i]);
 % objectives
 
 var float: cost = sum (i in INTERVALS) (total_demand[i] * prices[i]) / num_intervals_hour;
-var float: obj = cost + max(total_demand);
+var float: obj = cost + max_total_demand;
 solve minimize obj;
 
 % output [
